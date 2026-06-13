@@ -18,7 +18,7 @@ Welcome to the **Corelab** repository! This is a personal website and blog built
 
 ---
 
-## 🚀 Environment Setup
+## <a id="environment-setup"></a>🚀 Environment Setup
 
 To run and develop this project locally, ensure you have the following installed:
 1. **Quarto CLI**: Download and install from [quarto.org](https://quarto.org/docs/get-started/)
@@ -26,7 +26,7 @@ To run and develop this project locally, ensure you have the following installed
 
 ---
 
-## 💻 Local Preview
+## <a id="local-preview"></a>💻 Local Preview
 
 To start a local development server (it will automatically reload the browser when you make changes to posts or files):
 
@@ -38,7 +38,7 @@ After running this command, your browser should automatically open `http://local
 
 ---
 
-## ✍️ How to Write a New Post
+## <a id="how-to-write-a-new-post"></a>✍️ How to Write a New Post
 
 We have provided a helper script to quickly create a new blog post conforming to the project's folder structure.
 
@@ -85,7 +85,7 @@ Your markdown post content goes here...
 
 ---
 
-## 📊 How to Add Plots & Manim Animations
+## <a id="how-to-add-plots-manim-animations"></a>📊 How to Add Plots & Manim Animations
 
 This project supports adding visual assets such as static plots (using Matplotlib, Seaborn, etc.) and Manim animations.
 
@@ -118,7 +118,7 @@ This project supports adding visual assets such as static plots (using Matplotli
 
 ---
 
-## 🌐 How to Publish (Deploy Online)
+## <a id="how-to-publish-deploy-online"></a>🌐 How to Publish (Deploy Online)
 
 When you are ready to publish your edits or new articles online:
 
@@ -140,7 +140,7 @@ Once completed and showing `[✓] Published to ...`, your online site will be up
 
 ---
 
-## 📁 Key Project Structure
+## <a id="key-project-structure"></a>📁 Key Project Structure
 
 - `posts/`: Contains all blog posts. Each post is housed in its own subdirectory.
 - `pages/`: Static pages of the website (e.g., `blog.qmd`).
