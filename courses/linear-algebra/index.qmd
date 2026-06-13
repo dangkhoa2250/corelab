@@ -1,0 +1,17 @@
+---
+title: "Introduction of Linear Algebra"
+toc: true
+sidebar: course-en
+---
+
+
+This course explains **linear algebra** through geometric intuition — inspired by the 3Blue1Brown style.
+
+You won't just learn formulas; you'll **see** the geometric meaning behind every concept:
+
+- Vectors and space
+- Matrices as transformations
+- Eigenvalues, SVD, and AI applications
+
+Prerequisites: high school math. Suitable for ML learners, data scientists, or anyone wanting deeper intuition.
+

@@ -1,0 +1,11 @@
+---
+title: "ベクトルとは？"
+date: 2026-06-13
+categories: [linear-algebra]
+description: "ベクトルを矢印、量、空間上の点として直感的に紹介します。"
+image: ../../assets/images/posts/linear-algebra-pt1-what-is-a-vector/cover.svg
+lang: ja
+chapter: 1
+---
+
+ここに本文を書きます。

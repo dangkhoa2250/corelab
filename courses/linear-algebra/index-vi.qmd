@@ -1,0 +1,17 @@
+---
+title: "Linear Algebra"
+toc: true
+sidebar: course-vi
+---
+
+# Giới thiệu {#course-overview}
+
+Khóa học này giải thích **đại số tuyến tính** qua hình học trực quan — lấy cảm hứng từ phong cách của 3Blue1Brown.
+
+Bạn sẽ không chỉ học công thức, mà còn **nhìn thấy** ý nghĩa hình học đằng sau mỗi khái niệm:
+
+- Vector và không gian
+- Ma trận như phép biến đổi
+- Eigenvalue, SVD và ứng dụng trong AI
+
+Kiến thức nền: toán phổ thông. Phù hợp cho người học machine learning, khoa học dữ liệu, hoặc đơn giản là muốn hiểu sâu hơn về đại số tuyến tính.

@@ -1,0 +1,11 @@
+---
+title: "What is a Vector?"
+date: 2026-06-13
+categories: [linear-algebra]
+description: "A geometric introduction to vectors as arrows, quantities, and points in space."
+image: ../../assets/images/posts/linear-algebra-pt1-what-is-a-vector/cover.svg
+lang: en
+chapter: 1
+---
+
+Write here.

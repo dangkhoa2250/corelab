@@ -5,6 +5,7 @@ project:
     - "*.qmd"
     - "posts/**/*.qmd"
     - "pages/**/*.qmd"
+    - "courses/**/*.qmd"
     - "!templates/**"
 
 website:
@@ -17,8 +18,97 @@ website:
     right:
       - href: index.qmd
         text: About
+      - text: Course
+        menu:
+          - text: "Linear Algebra"
+            href: courses/linear-algebra/index.qmd
       - href: pages/blog.qmd
         text: Blog
+  sidebar:
+    - id: course-vi
+      title: "Linear Algebra"
+      style: "docked"
+      contents:
+        - text: "Linear Algebra"
+        - section: "Giới thiệu"
+          contents:
+            - text: "Về khóa học này"
+              href: "#course-overview"
+        - section: "Chương trình"
+          contents:
+            - text: "1. Vector là gì?"
+              href: posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.qmd
+            - text: "2. Không gian tuyến tính"
+            - text: "3. Cơ sở và số chiều"
+            - text: "4. Ma trận thực sự là gì?"
+            - text: "5. Nhân ma trận"
+            - text: "6. Định thức"
+            - text: "7. Nghịch đảo ma trận"
+            - text: "8. Hệ phương trình tuyến tính"
+            - text: "9. Không gian con"
+            - text: "10. Rank và Nullity"
+            - text: "11. Eigenvector và Eigenvalue"
+            - text: "12. Ý nghĩa hình học của Eigen"
+            - text: "13. Tích vô hướng"
+            - text: "14. Trực giao"
+            - text: "15. PCA và SVD"
+            - text: "16. Đại số tuyến tính và Deep Learning"
+    - id: course-en
+      title: "Linear Algebra"
+      style: "docked"
+      contents:
+        - text: "Linear Algebra"
+        - section: "Introduction"
+          contents:
+            - text: "About this course"
+              href: "#course-overview"
+        - section: "Chapters"
+          contents:
+            - text: "1. What is a Vector?"
+              href: posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-en/index.qmd
+            - text: "2. Linear Space"
+            - text: "3. Basis and Dimension"
+            - text: "4. What is a Matrix?"
+            - text: "5. Matrix Multiplication"
+            - text: "6. Determinant"
+            - text: "7. Matrix Inverse"
+            - text: "8. Linear Systems"
+            - text: "9. Subspaces"
+            - text: "10. Rank and Nullity"
+            - text: "11. Eigenvectors and Eigenvalues"
+            - text: "12. Geometric Meaning of Eigen"
+            - text: "13. Dot Product"
+            - text: "14. Orthogonality"
+            - text: "15. PCA and SVD"
+            - text: "16. Linear Algebra and Deep Learning"
+    - id: course-ja
+      title: "Linear Algebra"
+      style: "docked"
+      contents:
+        - text: "Linear Algebra"
+        - section: "紹介"
+          contents:
+            - text: "このコースについて"
+              href: "#course-overview"
+        - section: "チャプター"
+          contents:
+            - text: "1. ベクトルとは？"
+              href: posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-ja/index.qmd
+            - text: "2. 線形空間"
+            - text: "3. 基底と次元"
+            - text: "4. 行列とは？"
+            - text: "5. 行列の積"
+            - text: "6. 行列式"
+            - text: "7. 逆行列"
+            - text: "8. 線形方程式系"
+            - text: "9. 部分空間"
+            - text: "10. ランクとナルティ"
+            - text: "11. 固有ベクトルと固有値"
+            - text: "12. 固有値の幾何学的意味"
+            - text: "13. ドット積"
+            - text: "14. 直交性"
+            - text: "15. PCAとSVD"
+            - text: "16. 線形代数と深層学習"
   search:
     location: navbar
     type: overlay

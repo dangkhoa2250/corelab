@@ -1,0 +1,11 @@
+---
+title: "Vector là gì?"
+date: 2026-06-13
+categories: [linear-algebra]
+description: "Giới thiệu trực quan về vector như mũi tên, đại lượng và điểm trong không gian."
+image: ../../assets/images/posts/linear-algebra-pt1-what-is-a-vector/cover.svg
+lang: vi
+chapter: 1
+---
+
+Viết nội dung tại đây.
