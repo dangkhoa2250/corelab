@@ -9,7 +9,7 @@ project:
     - "!templates/**"
 
 website:
-  title: "corelab"
+  title: "Corelab"
   description: "Blog ve toan, AI, hinh minh hoa, va animation."
   favicon: assets/images/favicon.png
   navbar:

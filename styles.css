@@ -20,6 +20,7 @@
   --corelab-secondary-bg: rgba(255, 255, 255, 0.78);
 
   --corelab-bg: #fbfbfd;
+  --corelab-dropdown-bg: #ffffff;
 }
 
 html[data-theme="dark"] {
@@ -42,6 +43,7 @@ html[data-theme="dark"] {
   --corelab-secondary-bg: rgba(28, 28, 30, 0.78);
 
   --corelab-bg: #0d0d0f;
+  --corelab-dropdown-bg: #1c1c1e;
 }
 
 /* Smooth theme transitions */
@@ -120,7 +122,7 @@ main.content,
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding-left: 24px;
+  padding-left: 8px !important;
   padding-right: 24px;
   width: 100%;
   max-width: 100% !important;
@@ -185,6 +187,7 @@ main.content,
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
+  font-weight: 700 !important;
 }
 
 .navbar-logo {
@@ -466,10 +469,6 @@ h3 {
   body.course-layout-page #quarto-toc-toggle {
     display: none !important;
   }
-
-  body.course-layout-page .course-back-btn {
-    grid-column: 3 !important;
-  }
 }
 
 @media (max-width: 991.98px) {
@@ -484,6 +483,7 @@ body.course-layout-page #TOC {
   pointer-events: auto !important;
   padding-left: 0;
   border-left: none;
+  margin-top: 1.5rem !important;
 }
 
 body.course-layout-page #TOC #toc-title {
@@ -873,8 +873,14 @@ blockquote {
 
 footer,
 .footer {
+  display: none;
   padding: 0 !important;
   margin: 0 !important;
+}
+
+.quarto-container.page-layout-full ~ footer.footer,
+.quarto-container.page-layout-full ~ .footer {
+  display: block;
 }
 
 .nav-footer {
@@ -908,10 +914,10 @@ footer,
 /* Apple-style Profile/Branding Layout */
 .profile-container {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 300px;
-  gap: 4rem;
+  grid-template-columns: minmax(0, 1fr) 250px;
+  gap: 3rem;
   max-width: 1120px;
-  margin: 3.5rem auto;
+  margin: 0.5rem auto 0 auto;
   padding: 0 1.5rem;
   align-items: start;
 }
@@ -958,6 +964,11 @@ html[data-theme="dark"] .sidebar-lang-select {
   color: var(--corelab-ink);
 }
 
+/* Ensure top navbar header is drawn on top of sidebars and page content */
+#quarto-header {
+  z-index: 1040 !important;
+}
+
 /* Hide dropdown arrow on navbar Course button */
 .nav-item.dropdown .nav-link.dropdown-toggle::after {
   display: none;
@@ -968,35 +979,37 @@ html[data-theme="dark"] .sidebar-lang-select {
   border-radius: 14px;
   border: 1px solid var(--corelab-border);
   margin-top: 8px;
-  padding: 0.5rem;
-}
-
-/* Rounded dropdown menu */
-.navbar .dropdown-menu {
-  border-radius: 14px;
-  border: 1px solid var(--corelab-border);
-  margin-top: 8px;
   padding: 0.25rem;
   min-width: 100%;
+  z-index: 1050 !important; /* Ensure dropdown menu is drawn on top of sidebars and other content */
 }
 
 .navbar .dropdown-menu .dropdown-item {
   padding: 0.3rem 0.75rem;
   border-radius: 10px;
   font-size: 0.92rem;
+  color: var(--corelab-ink) !important;
 }
 
-/* Sidebar + dropdown dark mode sync */
-#quarto-sidebar,
-.navbar .dropdown-menu {
+/* Sidebar dark mode sync */
+#quarto-sidebar {
   background: var(--corelab-navbar-bg) !important;
   backdrop-filter: saturate(190%) blur(24px) !important;
+  border-right: 1px solid var(--corelab-border) !important;
+}
+
+/* Opaque dropdown menu */
+.navbar .dropdown-menu {
+  background: var(--corelab-dropdown-bg) !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: var(--corelab-shadow) !important;
 }
 
 .navbar .dropdown-menu .dropdown-item:hover,
 .navbar .dropdown-menu .dropdown-item:focus {
-  background: var(--corelab-soft);
-  color: var(--corelab-ink);
+  background: var(--corelab-soft) !important;
+  color: var(--corelab-ink) !important;
 }
 
 /* Sidebar SPA chapter nav */
@@ -1006,18 +1019,6 @@ html[data-theme="dark"] .sidebar-lang-select {
   border-radius: 8px;
 }
 
-.course-back-btn {
-  display: inline-block;
-  margin-bottom: 1.5rem;
-  font-size: 0.92rem;
-  font-weight: 600;
-  color: var(--corelab-accent);
-  text-decoration: none;
-}
-
-.course-back-btn:hover {
-  text-decoration: underline;
-}
 
 .course-chapter-pager {
   display: grid;
@@ -1138,15 +1139,15 @@ html[data-theme="dark"] .sidebar-lang-select {
 
 .brand-img {
   width: 100%;
-  max-width: 320px;
+  max-width: 240px;
   aspect-ratio: auto;
   object-fit: cover;
 }
 
 .profile-desc {
-  font-size: 1.05rem;
+  font-size: 0.95rem;
   color: var(--corelab-muted);
-  margin-top: 1.25rem;
+  margin-top: 0.75rem;
   text-align: left;
   line-height: 1.5;
   font-weight: 500;
@@ -1283,7 +1284,7 @@ a:hover {
   width: 100%;
   background: transparent;
   border: none;
-  padding: 6px 8px !important;
+  padding: 6px 0 !important;
   color: var(--corelab-ink);
   font-size: 1rem;
   font-weight: 700;
@@ -1296,14 +1297,7 @@ a:hover {
   opacity: 0.85;
 }
 
-.sidebar-course-dropdown-btn .dropdown-square-bullet {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background-color: var(--corelab-accent);
-  border-radius: 2.5px;
-  flex-shrink: 0;
-}
+
 
 .sidebar-course-dropdown-btn .dropdown-title-text {
   flex-grow: 1;
@@ -1468,10 +1462,12 @@ html[data-theme="dark"] .sidebar-custom-lang-select {
   }
   #quarto-sidebar {
     width: 280px !important;
-    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
   #quarto-sidebar .sidebar-menu-container {
-    padding-top: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
   }
 }
 
@@ -1480,15 +1476,13 @@ html[data-theme="dark"] .sidebar-custom-lang-select {
 #quarto-sidebar ul.sidebar-section,
 #quarto-sidebar li.sidebar-item,
 #quarto-sidebar .sidebar-item-container {
-  padding-left: 0 !important;
-  margin-left: 0 !important;
-  padding-right: 0 !important;
-  margin-right: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
   list-style: none !important;
 }
 
 /* Section headers (e.g. INTRODUCTION, CHAPTERS) */
-#quarto-sidebar .sidebar-section > .sidebar-item-container {
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1497,24 +1491,24 @@ html[data-theme="dark"] .sidebar-custom-lang-select {
   margin-top: 6px;
 }
 
-#quarto-sidebar .sidebar-section > .sidebar-item-container > .sidebar-link {
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-link {
   flex-grow: 1;
   text-transform: uppercase;
   font-weight: 700 !important;
   font-size: 0.72rem !important; /* Small, bold, uppercase */
   letter-spacing: 0.05em;
   color: var(--corelab-ink) !important;
-  padding: 8px 24px 4px 24px !important; /* Align left text exactly at 24px */
+  padding: 8px 16px 4px 16px !important; /* Align left text exactly at 16px */
   background: transparent !important;
   border-radius: 0 !important;
 }
 
-#quarto-sidebar .sidebar-section > .sidebar-item-container > .sidebar-link:hover {
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-link:hover {
   background: transparent !important;
   text-decoration: none !important;
 }
 
-#quarto-sidebar .sidebar-section > .sidebar-item-container > .sidebar-item-toggle {
+#quarto-sidebar .sidebar-item-section > .sidebar-item-container > .sidebar-item-toggle {
   padding: 0 !important;
   margin: 0 !important;
   color: var(--corelab-muted) !important;
@@ -1527,7 +1521,7 @@ html[data-theme="dark"] .sidebar-custom-lang-select {
   display: flex !important;
   align-items: center !important;
   min-height: 1.72rem;
-  padding: 0.24rem 0.65rem !important; /* Align left text inside the capsule */
+  padding: 4px 8px !important; /* Align left text inside the capsule to offset by 8px (16px + 8px = 24px) */
   border-radius: 8px !important; /* Rounded rectangle capsule styling */
   transition: all 180ms ease;
   font-size: 0.84rem;
@@ -1535,7 +1529,7 @@ html[data-theme="dark"] .sidebar-custom-lang-select {
   font-weight: 400 !important; /* Inactive sub-items are NOT bold */
   color: var(--corelab-muted) !important; /* Inactive sub-items are muted gray */
   border: none !important;
-  margin: 1px 16px 1px 16px !important; /* Indent capsule by 16px from edge, making total text offset 24px */
+  margin: 2px 16px 2px 16px !important; /* Indent capsule by 16px from edge, making total text offset 24px, and compact vertical spacing */
   text-decoration: none !important;
 }
 
