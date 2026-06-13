@@ -417,6 +417,7 @@ Jun 13, 2026
     }
     nextPath = nextPath.replace(/^\//, '');
     if (nextPath.endsWith('/')) nextPath += 'index.html';
+    nextPath = nextPath.replace(/\.qmd$/, '.html');
     if (!nextPath.endsWith('.html')) nextPath += '.html';
     return nextPath;
   };
