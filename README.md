@@ -60,12 +60,17 @@ date: 2026-06-13
 categories: [Math, Physics]  # Add relevant categories here
 description: "A short description of your post shown in the listing page."
 image: "../../assets/images/posts/fourier-transform/cover.svg" # Cover image path (optional)
+lang: vi # Language code: 'vi' (Vietnamese), 'en' (English), or 'ja' (Japanese)
 ---
 
 Your markdown post content goes here...
 ```
 
-*You can write standard markdown content, embed images, write math formulas with LaTeX, insert codeblocks, etc.*
+*   **Multilingual Support (`lang` field)**: 
+    *   Set `lang: vi` (default) if the post is in Vietnamese. It will appear under the **Tiếng Việt** tab on the blog page.
+    *   Set `lang: en` if the post is in English. It will appear under the **English** tab on the blog page.
+    *   Set `lang: ja` if the post is in Japanese. It will appear under the **日本語** tab on the blog page.
+*   You can write standard markdown content, embed images, write math formulas with LaTeX, insert codeblocks, etc.
 
 ---
 
