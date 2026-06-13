@@ -681,7 +681,11 @@ blockquote {
 
 .nav-footer {
   margin-top: 4rem;
-  color: var(--corelab-muted);
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: var(--corelab-muted) !important;
+  background: transparent !important;
+  border-top: 1px solid var(--corelab-border) !important;
 }
 
 /* Apple-style Profile/Branding Layout */
