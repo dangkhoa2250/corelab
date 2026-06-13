@@ -1,0 +1,4 @@
+interface:
+  display_name: "Translate"
+  short_description: "Translate Quarto posts into missing vi/en/ja versions."
+  default_prompt: "/translate @posts/YYYY-MM-DD-slug/index.qmd"
