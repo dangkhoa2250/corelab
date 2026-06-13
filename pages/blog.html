@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-categories','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-reading-time','listing-description','listing-image',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -217,21 +217,21 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
     <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
     <select id="listing-listing-sort" class="form-select" aria-label="Order By" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
       <option value="" disabled="" selected="" hidden="">Order By</option>
       <option value="index" data-direction="asc">Default</option>
+      <option value="listing-title" data-direction="asc">
+        Title
+      </option>
       <option value="listing-date-sort" data-direction="asc">
         Date - Oldest
       </option>
       <option value="listing-date-sort" data-direction="desc">
         Date - Newest
-      </option>
-      <option value="listing-title-sort" data-direction="asc">
-        Title
       </option>
     </select>
   </div>
@@ -240,64 +240,54 @@ window.Quarto = {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<table class="quarto-listing-table table">
-<thead>
-<tr>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="bWF0aCUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781335494561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="thumbnail"><a href="../posts/2026-06-fourier-series/index.html" class="no-external">
 
-<th>
-<a class="sort" data-sort="listing-date-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Date</a>
-</th>
+<img loading="lazy" src="../assets/images/posts/fourier-series/cover.svg" class="thumbnail-image">
 
-<th>
-<a class="sort" data-sort="listing-title-sort" onclick="if (this.classList.contains('sort-asc')) { this.classList.add('sort-desc'); this.classList.remove('sort-asc') } else { this.classList.add('sort-asc'); this.classList.remove('sort-desc')} return false;">Title</a>
-</th>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2026-06-fourier-series/index.html" class="no-external">Chuoi Fourier bang truc giac hinh hoc</a>
+</h3>
+<div class="delink listing-description"><a href="../posts/2026-06-fourier-series/index.html" class="no-external">
+<p>Mo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/2026-06-fourier-series/index.html" class="no-external">
+<div class="listing-date">
+Jun 13, 2026
+</div>
+<div class="listing-reading-time">1 min</div>
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="YWklMkNkZWVwLWxlYXJuaW5n" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781335494562" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
+<div class="thumbnail"><a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
 
-<th>
-Categories
-</th>
+<img loading="lazy" src="../assets/images/posts/transformers-intuition/cover.svg" class="thumbnail-image">
 
-<th>
-Description
-</th>
-
-</tr>
-</thead>
-<tbody class="list">
-
-<tr data-index="0" data-categories="bWF0aCUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781335494561" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-title-sort="Chuoi Fourier bang truc giac hinh hoc" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jun 13, 2026</span>
-</td>
-<td>
-<a href="../posts/2026-06-fourier-series/index.html" class="title listing-title">Chuoi Fourier bang truc giac hinh hoc</a>
-</td>
-<td>
-<span class="listing-categories">math, visualization</span>
-</td>
-<td>
-<span class="listing-description">Mo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation.</span>
-</td>
-
-</tr>
-
-<tr data-index="1" data-categories="YWklMkNkZWVwLWxlYXJuaW5n" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781335494562" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44" data-listing-title-sort="Transformer intuition: attention nhin nhu the nao" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jun 13, 2026</span>
-</td>
-<td>
-<a href="../posts/2026-06-transformers-intuition/index.html" class="title listing-title">Transformer intuition: attention nhin nhu the nao</a>
-</td>
-<td>
-<span class="listing-categories">ai, deep-learning</span>
-</td>
-<td>
-<span class="listing-description">Mot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa.</span>
-</td>
-
-</tr>
-
-</tbody>
-</table>
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">Transformer intuition: attention nhin nhu the nao</a>
+</h3>
+<div class="delink listing-description"><a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
+<p>Mot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa.</p>
+</a></div>
+</div>
+<div class="metadata">
+<a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
+<div class="listing-date">
+Jun 13, 2026
+</div>
+<div class="listing-reading-time">1 min</div>
+</a>
+</div>
+</div>
+</div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
 <script>
