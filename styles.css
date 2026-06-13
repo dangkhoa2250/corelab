@@ -183,6 +183,13 @@ main.content,
   color: var(--corelab-ink);
 }
 
+.nav-link:hover,
+.nav-link:focus,
+.dropdown-item:hover,
+.dropdown-item:focus {
+  text-decoration: none !important;
+}
+
 .navbar-brand {
   display: inline-flex;
   align-items: center;
