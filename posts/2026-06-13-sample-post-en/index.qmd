@@ -1,0 +1,14 @@
+---
+title: "Mamba-3 Part 2 - Methodological Deep Dive"
+date: 2026-06-13
+categories: [systems, machine-learning]
+description: "A deep dive into the architecture and hardware efficiency of the latest Mamba-3 sequence model."
+image: ../../assets/images/posts/transformers-intuition/cover.svg
+lang: en
+---
+
+This is a sample post in English to demonstrate multilingual support in Corelab.
+
+## Introduction
+
+Sequence models with linear complexity have gained popularity due to their efficient execution over long contexts. In this post, we discuss Mamba-3's architectural features.

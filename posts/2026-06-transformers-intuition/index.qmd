@@ -4,6 +4,7 @@ date: 2026-06-13
 categories: [ai, deep-learning]
 description: "Mot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa."
 image: ../../assets/images/posts/transformers-intuition/cover.svg
+lang: vi
 ---
 
 Day la bai mau cho nhom bai viet AI.

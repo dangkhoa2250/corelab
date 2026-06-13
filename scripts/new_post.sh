@@ -20,6 +20,7 @@ title: "${slug}"
 date: ${post_date}
 categories: []
 description: ""
+lang: vi
 ---
 
 Write here.

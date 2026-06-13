@@ -324,7 +324,10 @@ h4 {
 }
 
 h1 {
-  font-size: 4.6rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
 }
 
 h2 {
@@ -738,7 +741,7 @@ a:hover {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 2.8rem;
+    font-size: 2.1rem;
   }
 
   h2 {
@@ -777,4 +780,33 @@ a:hover {
   .profile-sidebar {
     position: static;
   }
+}
+
+/* Multilingual Language Selector */
+.language-selector {
+  display: flex;
+  gap: 0.25rem;
+  margin-bottom: 2.5rem;
+  border-bottom: 1px solid var(--corelab-border);
+  padding-bottom: 0.75rem;
+}
+
+.lang-tab {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--corelab-muted) !important;
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  transition: all 180ms ease;
+  text-decoration: none !important;
+}
+
+.lang-tab:hover {
+  color: var(--corelab-ink) !important;
+  background: var(--corelab-soft) !important;
+}
+
+.lang-tab.active {
+  color: var(--corelab-accent) !important;
+  background: var(--corelab-accent-soft) !important;
 }

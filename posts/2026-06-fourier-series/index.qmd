@@ -4,6 +4,7 @@ date: 2026-06-13
 categories: [math, visualization]
 description: "Mo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation."
 image: ../../assets/images/posts/fourier-series/cover.svg
+lang: vi
 ---
 
 Day la bai mau cho luong cong viec viet blog ve toan.

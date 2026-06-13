@@ -10,15 +10,15 @@ listing:
   fields: [date, title, reading-time, description, image]
   image-align: right
   include:
-    lang: vi
+    lang: ja
 ---
 
 :::{.language-selector}
-[Tiếng Việt](blog.qmd){.lang-tab .active}
+[Tiếng Việt](blog.qmd){.lang-tab}
 [English](blog-en.qmd){.lang-tab}
-[日本語](blog-ja.qmd){.lang-tab}
+[日本語](blog-ja.qmd){.lang-tab .active}
 :::
 
 :::{.page-intro}
-Tất cả bài viết đã xuất bản, sắp xếp theo thời gian mới nhất trước.
+日本語で公開されたすべての記事を、最新順に表示しています。
 :::
