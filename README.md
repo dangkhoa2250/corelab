@@ -1,101 +1,101 @@
 # Corelab - Website & Blog
 
-Chào mừng bạn đến với repo mã nguồn của **Corelab**! Đây là website cá nhân/blog cá nhân được xây dựng bằng **Quarto** và được lưu trữ trên **GitHub Pages**.
+Welcome to the **Corelab** repository! This is a personal website and blog built using **Quarto** and hosted on **GitHub Pages**.
 
-- **Link website**: [https://dangkhoa2250.github.io/corelab/](https://dangkhoa2250.github.io/corelab/)
-- **Link Github**: [https://github.com/dangkhoa2250/corelab](https://github.com/dangkhoa2250/corelab)
-
----
-
-## 🚀 Cài đặt môi trường
-
-Để chạy và phát triển dự án này trên máy của bạn, hãy đảm bảo đã cài đặt:
-1. **Quarto CLI**: Tải và cài đặt tại [quarto.org](https://quarto.org/docs/get-started/)
-2. **Git**: Dùng để quản lý mã nguồn và xuất bản trang web.
+- **Live Site**: [https://dangkhoa2250.github.io/corelab/](https://dangkhoa2250.github.io/corelab/)
+- **GitHub Repository**: [https://github.com/dangkhoa2250/corelab](https://github.com/dangkhoa2250/corelab)
 
 ---
 
-## 💻 Xem thử trên máy (Local Preview)
+## 🚀 Environment Setup
 
-Để khởi chạy một máy chủ xem thử cục bộ (máy chủ sẽ tự động tải lại trang khi bạn lưu thay đổi trong file code hoặc bài viết):
+To run and develop this project locally, ensure you have the following installed:
+1. **Quarto CLI**: Download and install from [quarto.org](https://quarto.org/docs/get-started/)
+2. **Git**: Used for version control and publishing.
+
+---
+
+## 💻 Local Preview
+
+To start a local development server (it will automatically reload the browser when you make changes to posts or files):
 
 ```bash
 quarto preview
 ```
 
-Sau khi chạy lệnh trên, trình duyệt sẽ tự động mở trang web ở địa chỉ mặc định `http://localhost:4344/`.
+After running this command, your browser should automatically open `http://localhost:4344/`.
 
 ---
 
-## ✍️ Hướng dẫn viết bài mới
+## ✍️ How to Write a New Post
 
-Để tạo nhanh một bài viết mới theo đúng cấu trúc thư mục tiêu chuẩn của dự án, bạn hãy dùng script helper được viết sẵn:
+We have provided a helper script to quickly create a new blog post conforming to the project's folder structure.
 
-### Bước 1: Chạy script tạo bài viết mới
-Mở terminal tại thư mục gốc của dự án và chạy:
+### Step 1: Run the new post script
+Open your terminal in the project root directory and run:
 
 ```bash
-bash scripts/new_post.sh YYYY-MM-DD ten-bai-viet-viet-lien-khong-dau
+bash scripts/new_post.sh YYYY-MM-DD your-post-slug
 ```
 
-**Ví dụ:**
+**Example:**
 ```bash
 bash scripts/new_post.sh 2026-06-13 fourier-transform
 ```
 
-Script này sẽ tự động tạo ra:
-- Thư mục bài viết: `posts/2026-06-13-fourier-transform/`
-- File nội dung chính: `posts/2026-06-13-fourier-transform/index.qmd`
-- File tài liệu tham khảo: `posts/2026-06-13-fourier-transform/refs.bib`
-- Thư mục chứa ảnh riêng của bài viết: `assets/images/posts/fourier-transform/`
-- Thư mục chứa code animation Manim riêng: `src/manim/posts/fourier-transform/`
+This script will automatically generate:
+- Post folder: `posts/2026-06-13-fourier-transform/`
+- Main markdown content: `posts/2026-06-13-fourier-transform/index.qmd`
+- Bibliography references: `posts/2026-06-13-fourier-transform/refs.bib`
+- Asset images directory: `assets/images/posts/fourier-transform/`
+- Manim source animations directory: `src/manim/posts/fourier-transform/`
 
-### Bước 2: Soạn thảo nội dung
-Mở file `index.qmd` vừa tạo trong thư mục bài viết. Bạn sẽ thấy phần đầu trang (frontmatter) dạng như sau:
+### Step 2: Edit your content
+Open the newly created `index.qmd` file. It will contain the frontmatter template:
 
 ```yaml
 ---
-title: "fourier-transform"
+title: "your-post-slug"
 date: 2026-06-13
-categories: [Math, Physics]  # Điền các category của bài viết tại đây
-description: "Mô tả ngắn gọn về bài viết hiển thị ở trang danh sách."
-image: "../../assets/images/posts/fourier-transform/cover.svg" # Ảnh cover bài viết (nếu có)
+categories: [Math, Physics]  # Add relevant categories here
+description: "A short description of your post shown in the listing page."
+image: "../../assets/images/posts/fourier-transform/cover.svg" # Cover image path (optional)
 ---
 
-Nội dung bài viết bằng Markdown bắt đầu từ đây...
+Your markdown post content goes here...
 ```
 
-*Bạn có thể thoải mái viết nội dung bằng cú pháp Markdown tiêu chuẩn, chèn ảnh, viết công thức Toán bằng LaTeX, codeblock, v.v.*
+*You can write standard markdown content, embed images, write math formulas with LaTeX, insert codeblocks, etc.*
 
 ---
 
-## 🌐 Hướng dẫn Publish (Xuất bản lên mạng)
+## 🌐 How to Publish (Deploy Online)
 
-Khi bạn đã hoàn thành việc chỉnh sửa hoặc viết bài mới và muốn đưa lên trang web chính thức, hãy thực hiện các bước sau:
+When you are ready to publish your edits or new articles online:
 
-### Bước 1: Lưu thay đổi và đẩy code lên nhánh `main`
+### Step 1: Commit and push changes to the `main` branch
 ```bash
 git add .
-git commit -m "Thêm bài viết mới: fourier-transform"
+git commit -m "Add new post: fourier-transform"
 git push
 ```
 
-### Bước 2: Xuất bản lên GitHub Pages
-Chạy lệnh duy nhất sau để Quarto tự động build trang web và deploy lên nhánh `gh-pages`:
+### Step 2: Publish to GitHub Pages
+Run the following Quarto command to compile your site and push the output to the `gh-pages` branch:
 
 ```bash
 quarto publish gh-pages
 ```
 
-Sau khi lệnh chạy hoàn tất và báo `[✓] Published to ...`, trang web của bạn sẽ được cập nhật trực tuyến sau 1 - 2 phút!
+Once completed and showing `[✓] Published to ...`, your online site will be updated in about 1 - 2 minutes!
 
 ---
 
-## 📁 Cấu trúc thư mục chính của dự án
+## 📁 Key Project Structure
 
-- `posts/`: Chứa tất cả các bài viết của blog. Mỗi bài viết nằm trong một thư mục riêng biệt.
-- `pages/`: Chứa các trang tĩnh của website (ví dụ: `blog.qmd`).
-- `assets/`: Chứa tài nguyên tĩnh như hình ảnh (`images/`), animations (`animations/`).
-- `scripts/`: Chứa các script tiện ích phát triển (tạo bài viết mới, render animation Manim, v.v.).
-- `styles.css`: File CSS tùy chỉnh giao diện (toàn bộ style của navbar mờ kính, các nút bấm, v.v.).
-- `_quarto.yml`: File cấu hình chung của website Quarto (menu điều hướng, favicon, giao diện sáng/tối, v.v.).
+- `posts/`: Contains all blog posts. Each post is housed in its own subdirectory.
+- `pages/`: Static pages of the website (e.g., `blog.qmd`).
+- `assets/`: Static assets such as images (`images/`) and animations (`animations/`).
+- `scripts/`: Development scripts (creating new posts, rendering Manim scenes, etc.).
+- `styles.css`: Custom CSS styles (including the glassmorphic full-width navbar, buttons, typography).
+- `_quarto.yml`: Global configuration for the Quarto website (navigation menus, dark/light themes, favicon).
