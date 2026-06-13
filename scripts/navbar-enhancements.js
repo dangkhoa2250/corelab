@@ -585,13 +585,25 @@
     if (!content) return;
 
     let savedHtml = null;
+    let savedTitle = '';
 
     const showOverview = (e) => {
       if (e) e.preventDefault();
       document.body.dataset.courseCurrentPath = localizePath(window.location.pathname, getCoursePageLang());
       if (savedHtml) {
         content.innerHTML = savedHtml;
+        document.title = savedTitle;
         savedHtml = null;
+        const overviewOffset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+        const overviewCoursePaths = {
+          en: 'courses/linear-algebra/index.html',
+          vi: 'courses/linear-algebra/index-vi.html',
+          ja: 'courses/linear-algebra/index-ja.html'
+        };
+        const overviewHref = overviewOffset + overviewCoursePaths[getCoursePageLang()];
+        const overviewA = document.createElement('a');
+        overviewA.href = overviewHref;
+        history.pushState({}, '', overviewA.href);
         links.forEach(l => {
           l.closest('.sidebar-item')?.classList.remove('course-active');
           l.classList.remove('course-active');
@@ -647,7 +659,10 @@
       link.closest('.sidebar-item')?.classList.add('course-active');
       link.classList.add('course-active');
 
-      if (!savedHtml) savedHtml = content.innerHTML;
+      if (!savedHtml) {
+        savedHtml = content.innerHTML;
+        savedTitle = document.title;
+      }
       content.innerHTML = '<p class="course-loading">Loading…</p>';
 
       try {
@@ -656,7 +671,9 @@
         const doc = new DOMParser().parseFromString(html, 'text/html');
         const newContent = doc.querySelector('#quarto-document-content');
         if (newContent) {
+          document.title = doc.title;
           content.innerHTML = newContent.innerHTML;
+          history.pushState({}, '', a.href);
           setupCoursePageToc();
           setupCourseChapterPager();
           window.scrollTo({ top: 0, behavior: 'smooth' });
