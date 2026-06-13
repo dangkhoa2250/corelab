@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Transformers Intuition Cover</title>
+  <desc id="desc">A simple attention grid illustration for an AI blog post.</desc>
+  <rect width="960" height="540" fill="#f4f1e8"/>
+  <g stroke="#14213d" stroke-width="2" fill="none" opacity="0.35">
+    <rect x="120" y="120" width="120" height="120"/>
+    <rect x="300" y="120" width="120" height="120"/>
+    <rect x="480" y="120" width="120" height="120"/>
+    <rect x="660" y="120" width="120" height="120"/>
+    <rect x="120" y="300" width="120" height="120"/>
+    <rect x="300" y="300" width="120" height="120"/>
+    <rect x="480" y="300" width="120" height="120"/>
+    <rect x="660" y="300" width="120" height="120"/>
+  </g>
+  <g stroke="#ef8354" stroke-width="6" stroke-linecap="round">
+    <line x1="180" y1="180" x2="540" y2="180"/>
+    <line x1="360" y1="360" x2="720" y2="360"/>
+    <line x1="180" y1="180" x2="720" y2="360"/>
+  </g>
+  <text x="120" y="76" font-size="42" font-family="Georgia, serif" fill="#14213d">Transformer Intuition</text>
+  <text x="120" y="472" font-size="24" font-family="Georgia, serif" fill="#5c677d">Attention nhu mot ban do trong so giua cac token</text>
+</svg>

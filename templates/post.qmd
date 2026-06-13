@@ -1,0 +1,15 @@
+---
+title: "New Post"
+date: 2026-06-13
+categories: []
+description: ""
+draft: true
+---
+
+Mo ta bai viet o day.
+
+## Motivation
+
+## Main idea
+
+## Visuals

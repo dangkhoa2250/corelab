@@ -1,0 +1,19 @@
+---
+title: "Chuoi Fourier bang truc giac hinh hoc"
+date: 2026-06-13
+categories: [math, visualization]
+description: "Mo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation."
+image: ../../assets/images/posts/fourier-series/cover.svg
+---
+
+Day la bai mau cho luong cong viec viet blog ve toan.
+
+## Y tuong
+
+Ta co the xay dung mot dang song phuc tap bang cach cong cac thanh phan co tan so khac nhau.
+
+![](../../assets/images/posts/fourier-series/cover.svg)
+
+## Animation
+
+Khi co animation render san, co the nhung truc tiep tu `assets/animations/rendered/`.

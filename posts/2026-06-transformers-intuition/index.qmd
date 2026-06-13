@@ -1,0 +1,19 @@
+---
+title: "Transformer intuition: attention nhin nhu the nao"
+date: 2026-06-13
+categories: [ai, deep-learning]
+description: "Mot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa."
+image: ../../assets/images/posts/transformers-intuition/cover.svg
+---
+
+Day la bai mau cho nhom bai viet AI.
+
+## Core idea
+
+Attention cho phep mo hinh tu quyet dinh phan nao cua input la quan trong nhat cho moi token.
+
+![](../../assets/images/posts/transformers-intuition/cover.svg)
+
+## Media workflow
+
+Neu bai viet co animation, source nam trong `src/manim/posts/transformers-intuition/`, con file da render nam trong `assets/animations/rendered/`.

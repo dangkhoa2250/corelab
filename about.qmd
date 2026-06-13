@@ -1,0 +1,21 @@
+---
+title: "About"
+---
+
+:::{.page-intro}
+`corelab` la blog ca nhan de viet ve toan, AI, va cac giai thich truc quan bang hinh, do thi, animation.
+:::
+
+## Cach site nay duoc to chuc
+
+- Bai viet publish nam trong `posts/`
+- Image va animation da render nam trong `assets/`
+- Source tao media nhu `manim` va plot nam trong `src/`
+
+## Dinh huong noi dung
+
+Muc tieu la viet gon, ro, va uu tien truc giac. Mỗi bai viet co the la:
+
+- mot ghi chu ly thuyet ngan
+- mot bai giai thich khai niem AI
+- mot demo nho bang image hoac animation

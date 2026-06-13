@@ -1,0 +1,13 @@
+---
+title: "Projects"
+---
+
+:::{.page-intro}
+Trang nay danh cho cac series, note dai ky, hoac project lon lien quan den toan va AI.
+:::
+
+## Se xuat hien o day
+
+- series bai viet co chung mot chu de
+- project note keo dai nhieu bai
+- tong hop media, visualization, va experiment da publish

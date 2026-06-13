@@ -1,0 +1,12 @@
+---
+title: "blog"
+listing:
+  contents: "../posts/**/index.qmd"
+  sort: "date desc"
+  type: table
+  fields: [date, title, categories, description]
+---
+
+:::{.page-intro}
+Tat ca bai viet da publish, sap xep theo thoi gian moi nhat truoc.
+:::

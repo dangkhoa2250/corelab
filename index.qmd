@@ -1,0 +1,27 @@
+---
+pagetitle: "Banh Mi"
+page-layout: full
+title-block-style: none
+---
+
+::: {.profile-container}
+
+::: {.profile-content}
+## Research Interests
+
+Machine learning and systems, with a focus on efficient training and inference:
+
+- Hardware-aware algorithms.
+- Sequence models with long-range memory.
+
+:::
+
+::: {.profile-sidebar}
+![](assets/images/banh_mi_profile.png){.brand-img}
+
+::: {.profile-desc}
+Just a guy who loves Bánh Mì Việt Nam and coding.
+:::
+:::
+
+:::

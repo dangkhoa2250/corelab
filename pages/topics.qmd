@@ -1,0 +1,36 @@
+---
+title: "Topics"
+---
+
+:::{.page-intro}
+Hai cum noi dung chinh cua blog la toan va AI, voi nhan manh vao cac bai viet giai thich bang truc giac.
+:::
+
+:::{.feature-grid}
+:::{.feature-card}
+## Toan
+
+- Phan tich
+- Dai so tuyen tinh
+- Xac suat
+- Toan cho machine learning
+:::
+
+:::{.feature-card}
+## AI
+
+- Neural networks
+- Optimization
+- Representation learning
+- Truc quan hoa mo hinh
+:::
+
+:::{.feature-card}
+## Media
+
+- Hinh minh hoa
+- Animation bang Manim
+- Do thi va diagram
+- Ghi chu ky thuat
+:::
+:::

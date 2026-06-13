@@ -1,0 +1,5 @@
+---
+title: "New Page"
+---
+
+Noi dung trang tinh o day.
