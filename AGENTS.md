@@ -10,7 +10,10 @@ This repository is a Quarto website and blog. Top-level `.qmd` files such as `in
 - `quarto render`: builds the site into `_site/` using `_quarto.yml`.
 - `quarto publish gh-pages`: renders and publishes the site to GitHub Pages.
 - `bash scripts/new_post.sh YYYY-MM-DD slug`: creates a post folder, `index.qmd`, `refs.bib`, image directory, and Manim source directory.
-- `bash scripts/render_manim.sh ...` and `bash scripts/export_plots.sh ...`: render generated visual assets when a post needs animations or plots.
+- `bash scripts/render_manim.sh <slug> <scene_class> [flags]`: render a Manim scene. Uses `uv run manim`. Example: `bash scripts/render_manim.sh fourier-series WaveScene -qm`.
+- `uv run manim src/manim/posts/<slug>/scene.py <SceneClass> -qm`: render Manim directly via uv.
+- `uv run manim checkhealth`: verify Manim installation (requires latex/dvisvgm on PATH).
+- `bash scripts/export_plots.sh ...`: export generated plots.
 
 ## Coding Style & Naming Conventions
 
