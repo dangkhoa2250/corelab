@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" role="img" aria-labelledby="title desc">
+  <title id="title">Fourier Series Cover</title>
+  <desc id="desc">A simple sine-wave illustration for a math blog post.</desc>
+  <rect width="960" height="540" fill="#f4f1e8"/>
+  <path d="M0 270 C80 170, 160 170, 240 270 S400 370, 480 270 S640 170, 720 270 S880 370, 960 270" fill="none" stroke="#ef8354" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="240" cy="270" r="10" fill="#14213d"/>
+  <circle cx="480" cy="270" r="10" fill="#14213d"/>
+  <circle cx="720" cy="270" r="10" fill="#14213d"/>
+  <text x="72" y="110" font-size="42" font-family="Georgia, serif" fill="#14213d">Chuoi Fourier</text>
+  <text x="72" y="156" font-size="24" font-family="Georgia, serif" fill="#5c677d">Tong hop song tu cac thanh phan co ban</text>
+</svg>

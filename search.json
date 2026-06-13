@@ -1,0 +1,128 @@
+[
+  {
+    "objectID": "posts/2026-06-transformers-intuition/index.html",
+    "href": "posts/2026-06-transformers-intuition/index.html",
+    "title": "Transformer intuition: attention nhin nhu the nao",
+    "section": "",
+    "text": "Day la bai mau cho nhom bai viet AI."
+  },
+  {
+    "objectID": "posts/2026-06-transformers-intuition/index.html#core-idea",
+    "href": "posts/2026-06-transformers-intuition/index.html#core-idea",
+    "title": "Transformer intuition: attention nhin nhu the nao",
+    "section": "Core idea",
+    "text": "Core idea\nAttention cho phep mo hinh tu quyet dinh phan nao cua input la quan trong nhat cho moi token."
+  },
+  {
+    "objectID": "posts/2026-06-transformers-intuition/index.html#media-workflow",
+    "href": "posts/2026-06-transformers-intuition/index.html#media-workflow",
+    "title": "Transformer intuition: attention nhin nhu the nao",
+    "section": "Media workflow",
+    "text": "Media workflow\nNeu bai viet co animation, source nam trong src/manim/posts/transformers-intuition/, con file da render nam trong assets/animations/rendered/."
+  },
+  {
+    "objectID": "pages/topics.html",
+    "href": "pages/topics.html",
+    "title": "Topics",
+    "section": "",
+    "text": "Hai cum noi dung chinh cua blog la toan va AI, voi nhan manh vao cac bai viet giai thich bang truc giac."
+  },
+  {
+    "objectID": "pages/topics.html#toan",
+    "href": "pages/topics.html#toan",
+    "title": "Topics",
+    "section": "Toan",
+    "text": "Toan\n\nPhan tich\nDai so tuyen tinh\nXac suat\nToan cho machine learning"
+  },
+  {
+    "objectID": "pages/topics.html#ai",
+    "href": "pages/topics.html#ai",
+    "title": "Topics",
+    "section": "AI",
+    "text": "AI\n\nNeural networks\nOptimization\nRepresentation learning\nTruc quan hoa mo hinh"
+  },
+  {
+    "objectID": "pages/topics.html#media",
+    "href": "pages/topics.html#media",
+    "title": "Topics",
+    "section": "Media",
+    "text": "Media\n\nHinh minh hoa\nAnimation bang Manim\nDo thi va diagram\nGhi chu ky thuat"
+  },
+  {
+    "objectID": "pages/blog.html",
+    "href": "pages/blog.html",
+    "title": "blog",
+    "section": "",
+    "text": "Tat ca bai viet da publish, sap xep theo thoi gian moi nhat truoc.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Title\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nDate\n\n\n\nTitle\n\n\n\nCategories\n\n\n\nDescription\n\n\n\n\n\n\n\n\nJun 13, 2026\n\n\nChuoi Fourier bang truc giac hinh hoc\n\n\nmath, visualization\n\n\nMo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation.\n\n\n\n\n\n\nJun 13, 2026\n\n\nTransformer intuition: attention nhin nhu the nao\n\n\nai, deep-learning\n\n\nMot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa.\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "corelab la blog ca nhan de viet ve toan, AI, va cac giai thich truc quan bang hinh, do thi, animation."
+  },
+  {
+    "objectID": "about.html#cach-site-nay-duoc-to-chuc",
+    "href": "about.html#cach-site-nay-duoc-to-chuc",
+    "title": "About",
+    "section": "Cach site nay duoc to chuc",
+    "text": "Cach site nay duoc to chuc\n\nBai viet publish nam trong posts/\nImage va animation da render nam trong assets/\nSource tao media nhu manim va plot nam trong src/"
+  },
+  {
+    "objectID": "about.html#dinh-huong-noi-dung",
+    "href": "about.html#dinh-huong-noi-dung",
+    "title": "About",
+    "section": "Dinh huong noi dung",
+    "text": "Dinh huong noi dung\nMuc tieu la viet gon, ro, va uu tien truc giac. Mỗi bai viet co the la:\n\nmot ghi chu ly thuyet ngan\nmot bai giai thich khai niem AI\nmot demo nho bang image hoac animation"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "corelab",
+    "section": "",
+    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory.\n\n\n\n\n\nJust a guy who loves Bánh Mì Việt Nam and coding."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "corelab",
+    "section": "",
+    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory."
+  },
+  {
+    "objectID": "pages/projects.html",
+    "href": "pages/projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Trang nay danh cho cac series, note dai ky, hoac project lon lien quan den toan va AI."
+  },
+  {
+    "objectID": "pages/projects.html#se-xuat-hien-o-day",
+    "href": "pages/projects.html#se-xuat-hien-o-day",
+    "title": "Projects",
+    "section": "Se xuat hien o day",
+    "text": "Se xuat hien o day\n\nseries bai viet co chung mot chu de\nproject note keo dai nhieu bai\ntong hop media, visualization, va experiment da publish"
+  },
+  {
+    "objectID": "posts/2026-06-fourier-series/index.html",
+    "href": "posts/2026-06-fourier-series/index.html",
+    "title": "Chuoi Fourier bang truc giac hinh hoc",
+    "section": "",
+    "text": "Day la bai mau cho luong cong viec viet blog ve toan."
+  },
+  {
+    "objectID": "posts/2026-06-fourier-series/index.html#y-tuong",
+    "href": "posts/2026-06-fourier-series/index.html#y-tuong",
+    "title": "Chuoi Fourier bang truc giac hinh hoc",
+    "section": "Y tuong",
+    "text": "Y tuong\nTa co the xay dung mot dang song phuc tap bang cach cong cac thanh phan co tan so khac nhau."
+  },
+  {
+    "objectID": "posts/2026-06-fourier-series/index.html#animation",
+    "href": "posts/2026-06-fourier-series/index.html#animation",
+    "title": "Chuoi Fourier bang truc giac hinh hoc",
+    "section": "Animation",
+    "text": "Animation\nKhi co animation render san, co the nhung truc tiep tu assets/animations/rendered/."
+  }
+]
