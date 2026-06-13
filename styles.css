@@ -379,7 +379,8 @@ th {
 .page-intro {
   margin: 1rem 0 2.5rem;
   font-size: 1.22rem;
-  color: var(--corelab-muted);
+  color: var(--corelab-ink);
+  opacity: 0.85;
   max-width: 46rem;
 }
 
@@ -576,9 +577,15 @@ th {
   grid-area: description;
   margin: 0;
   font-size: 1rem;
-  color: var(--corelab-ink);
-  opacity: 0.8;
   line-height: 1.5;
+}
+
+.quarto-listing-container-default .quarto-post .listing-description,
+.quarto-listing-container-default .quarto-post .listing-description a,
+.quarto-listing-container-default .quarto-post .listing-description p {
+  color: var(--corelab-ink) !important;
+  opacity: 0.8;
+  text-decoration: none !important;
 }
 
 .quarto-listing-container-default .quarto-post .listing-categories {
