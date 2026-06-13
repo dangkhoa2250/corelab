@@ -285,7 +285,21 @@ ul.task-list li input[type="checkbox"] {
   };
 
   const normalizeSitePath = (path) => {
-    let nextPath = path.replace(/^https?:\/\/[^/]+/, '').replace(/^\//, '');
+    let nextPath = path.replace(/^https?:\/\/[^/]+/, '');
+    // Strip site subpath prefix (e.g. /corelab/) using quarto:offset meta tag
+    const offset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+    if (offset) {
+      const upCount = (offset.match(/\.\.\//g) || []).length;
+      if (upCount > 0) {
+        const parts = nextPath.replace(/^\//, '').split('/');
+        const siteRootParts = parts.slice(0, parts.length - upCount - 1);
+        if (siteRootParts.length > 0) {
+          const siteRoot = '/' + siteRootParts.join('/') + '/';
+          nextPath = nextPath.replace(siteRoot, '/');
+        }
+      }
+    }
+    nextPath = nextPath.replace(/^\//, '');
     if (nextPath.endsWith('/')) nextPath += 'index.html';
     if (!nextPath.endsWith('.html')) nextPath += '.html';
     return nextPath;
