@@ -19,10 +19,6 @@ website:
         text: About
       - href: pages/blog.qmd
         text: Blog
-      - href: pages/topics.qmd
-        text: Topics
-      - href: pages/projects.qmd
-        text: Projects
   search:
     location: navbar
     type: overlay
