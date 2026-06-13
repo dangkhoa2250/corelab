@@ -7,6 +7,17 @@ Welcome to the **Corelab** repository! This is a personal website and blog built
 
 ---
 
+## 📋 Table of Contents
+
+- [🚀 Environment Setup](#environment-setup)
+- [💻 Local Preview](#local-preview)
+- [✍️ How to Write a New Post](#how-to-write-a-new-post)
+- [📊 How to Add Plots & Manim Animations](#how-to-add-plots-manim-animations)
+- [🌐 How to Publish (Deploy Online)](#how-to-publish-deploy-online)
+- [📁 Key Project Structure](#key-project-structure)
+
+---
+
 ## 🚀 Environment Setup
 
 To run and develop this project locally, ensure you have the following installed:
@@ -71,6 +82,39 @@ Your markdown post content goes here...
     *   Set `lang: en` if the post is in English. It will appear under the **English** tab on the blog page.
     *   Set `lang: ja` if the post is in Japanese. It will appear under the **日本語** tab on the blog page.
 *   You can write standard markdown content, embed images, write math formulas with LaTeX, insert codeblocks, etc.
+
+---
+
+## 📊 How to Add Plots & Manim Animations
+
+This project supports adding visual assets such as static plots (using Matplotlib, Seaborn, etc.) and Manim animations.
+
+### 📈 Drawing & Embedding Plots
+1. **Source Code**: Place your plotting scripts under `src/plots/posts/<your-post-slug>/` (e.g., `src/plots/posts/fourier-transform/plot.py`).
+2. **Export Asset**: Configure your script to save/export the resulting image (PNG or SVG) into the post's asset folder:
+   `assets/images/posts/<your-post-slug>/your_plot.png`
+   *(Refer to [scripts/export_plots.sh](file:///Users/jason/project/corelab/scripts/export_plots.sh) for examples)*
+3. **Embed in Post**: Open `posts/YYYY-MM-DD-<your-post-slug>/index.qmd` and embed the image using standard Markdown syntax:
+   ```markdown
+   ![](../../assets/images/posts/<your-post-slug>/your_plot.png)
+   ```
+
+### 🎬 Rendering & Embedding Manim Animations
+1. **Source Code**: Place your Manim Python files under `src/manim/posts/<your-post-slug>/` (e.g., `src/manim/posts/fourier-transform/scene.py`).
+2. **Render**: Use the `manim` CLI (or [scripts/render_manim.sh](file:///Users/jason/project/corelab/scripts/render_manim.sh)) to render the scene and output it directly to the rendered animations directory:
+   ```bash
+   manim src/manim/posts/<your-post-slug>/scene.py <SceneClassName> -qm -o ../../../../assets/animations/rendered/mp4/<filename>.mp4
+   ```
+   *(For high quality, use `-qh` instead of `-qm`)*
+3. **Embed in Post**: You can embed the rendered MP4 file into your `index.qmd` using one of two methods:
+   - **Using Quarto's Native Video Tag**:
+     ```markdown
+     {{< video ../../assets/animations/rendered/mp4/<filename>.mp4 >}}
+     ```
+   - **Using HTML5 Video Tag** (highly recommended for short, loopable animations like a GIF but with much smaller file size):
+     ```html
+     <video autoplay loop muted playsinline src="../../assets/animations/rendered/mp4/<filename>.mp4" width="100%"></video>
+     ```
 
 ---
 
