@@ -1,52 +1,53 @@
 [
   {
-    "objectID": "posts/2026-06-transformers-intuition/index.html",
-    "href": "posts/2026-06-transformers-intuition/index.html",
-    "title": "Transformer intuition: attention nhin nhu the nao",
+    "objectID": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html",
+    "href": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html",
+    "title": "Vector là gì?",
     "section": "",
-    "text": "Day la bai mau cho nhom bai viet AI."
+    "text": "Viết nội dung tại đây.",
+    "crumbs": [
+      "Chương trình",
+      "1. Vector là gì?"
+    ]
   },
   {
-    "objectID": "posts/2026-06-transformers-intuition/index.html#core-idea",
-    "href": "posts/2026-06-transformers-intuition/index.html#core-idea",
-    "title": "Transformer intuition: attention nhin nhu the nao",
-    "section": "Core idea",
-    "text": "Core idea\nAttention cho phep mo hinh tu quyet dinh phan nao cua input la quan trong nhat cho moi token."
-  },
-  {
-    "objectID": "posts/2026-06-transformers-intuition/index.html#media-workflow",
-    "href": "posts/2026-06-transformers-intuition/index.html#media-workflow",
-    "title": "Transformer intuition: attention nhin nhu the nao",
-    "section": "Media workflow",
-    "text": "Media workflow\nNeu bai viet co animation, source nam trong src/manim/posts/transformers-intuition/, con file da render nam trong assets/animations/rendered/."
-  },
-  {
-    "objectID": "posts/2026-06-13-sample-post-ja/index.html",
-    "href": "posts/2026-06-13-sample-post-ja/index.html",
-    "title": "フーリエ級数の幾何学的直感",
+    "objectID": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-en/index.html",
+    "href": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-en/index.html",
+    "title": "What is a Vector?",
     "section": "",
-    "text": "これは日本語での多言語サポートを示すためのサンプル記事です。"
+    "text": "Write here.",
+    "crumbs": [
+      "Chapters",
+      "1. What is a Vector?"
+    ]
   },
   {
-    "objectID": "posts/2026-06-13-sample-post-ja/index.html#概要",
-    "href": "posts/2026-06-13-sample-post-ja/index.html#概要",
-    "title": "フーリエ級数の幾何学的直感",
-    "section": "概要",
-    "text": "概要\n複雑な波形を異なる周波数のサイン波とコサイン波の重ね合わせとして分解・合成するフーリエ級数について解説します。"
-  },
-  {
-    "objectID": "pages/blog.html",
-    "href": "pages/blog.html",
+    "objectID": "pages/blog-ja.html",
+    "href": "pages/blog-ja.html",
     "title": "blog",
     "section": "",
-    "text": "Tiếng Việt English 日本語\n\n\nTất cả bài viết đã xuất bản, sắp xếp theo thời gian mới nhất trước.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nChuoi Fourier bang truc giac hinh hoc\n\n\nMo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation.\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\n\n\n\n\n\n\n\nTransformer intuition: attention nhin nhu the nao\n\n\nMot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa.\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Tiếng Việt English 日本語\n\n\n日本語で公開されたすべての記事を、最新順に表示しています。\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nベクトルとは？\n\n\nベクトルを矢印、量、空間上の点として直感的に紹介します。\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "pages/blog-en.html",
-    "href": "pages/blog-en.html",
-    "title": "blog",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Corelab",
     "section": "",
-    "text": "Tiếng Việt English 日本語\n\n\nAll published posts in English, sorted by newest first.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nMamba-3 Part 2 - Methodological Deep Dive\n\n\nA deep dive into the architecture and hardware efficiency of the latest Mamba-3 sequence model.\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory.\n\n\n\n\n\nJust a guy who loves Bánh Mì Việt Nam and coding."
+  },
+  {
+    "objectID": "index.html#research-interests",
+    "href": "index.html#research-interests",
+    "title": "Corelab",
+    "section": "",
+    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory."
+  },
+  {
+    "objectID": "courses/linear-algebra/index-vi.html",
+    "href": "courses/linear-algebra/index-vi.html",
+    "title": "Linear Algebra",
+    "section": "",
+    "text": "Giới thiệu\nKhóa học này giải thích đại số tuyến tính qua hình học trực quan — lấy cảm hứng từ phong cách của 3Blue1Brown.\nBạn sẽ không chỉ học công thức, mà còn nhìn thấy ý nghĩa hình học đằng sau mỗi khái niệm:\n\nVector và không gian\nMa trận như phép biến đổi\nEigenvalue, SVD và ứng dụng trong AI\n\nKiến thức nền: toán phổ thông. Phù hợp cho người học machine learning, khoa học dữ liệu, hoặc đơn giản là muốn hiểu sâu hơn về đại số tuyến tính."
   },
   {
     "objectID": "about.html",
@@ -70,59 +71,49 @@
     "text": "Dinh huong noi dung\nMuc tieu la viet gon, ro, va uu tien truc giac. Mỗi bai viet co the la:\n\nmot ghi chu ly thuyet ngan\nmot bai giai thich khai niem AI\nmot demo nho bang image hoac animation"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "corelab",
+    "objectID": "courses/linear-algebra/index-ja.html",
+    "href": "courses/linear-algebra/index-ja.html",
+    "title": "Linear Algebra",
     "section": "",
-    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory.\n\n\n\n\n\nJust a guy who loves Bánh Mì Việt Nam and coding."
+    "text": "このコースでは、線形代数を幾何学的直感を通して解説します — 3Blue1Brown スタイルに触発されています。\n単なる公式ではなく、各概念の背後にある幾何学的意味を見ることができます：\n\nベクトルと空間\n変換としての行列\n固有値、SVD、AIへの応用\n\n前提知識：高校数学。機械学習、データサイエンス、またはより深い直感を求める方に適しています。"
   },
   {
-    "objectID": "index.html#research-interests",
-    "href": "index.html#research-interests",
-    "title": "corelab",
+    "objectID": "courses/linear-algebra/index-ja.html#紹介",
+    "href": "courses/linear-algebra/index-ja.html#紹介",
+    "title": "Linear Algebra",
     "section": "",
-    "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory."
+    "text": "このコースでは、線形代数を幾何学的直感を通して解説します — 3Blue1Brown スタイルに触発されています。\n単なる公式ではなく、各概念の背後にある幾何学的意味を見ることができます：\n\nベクトルと空間\n変換としての行列\n固有値、SVD、AIへの応用\n\n前提知識：高校数学。機械学習、データサイエンス、またはより深い直感を求める方に適しています。"
   },
   {
-    "objectID": "pages/blog-ja.html",
-    "href": "pages/blog-ja.html",
+    "objectID": "courses/linear-algebra/index.html",
+    "href": "courses/linear-algebra/index.html",
+    "title": "Introduction of Linear Algebra",
+    "section": "",
+    "text": "This course explains linear algebra through geometric intuition — inspired by the 3Blue1Brown style.\nYou won’t just learn formulas; you’ll see the geometric meaning behind every concept:\n\nVectors and space\nMatrices as transformations\nEigenvalues, SVD, and AI applications\n\nPrerequisites: high school math. Suitable for ML learners, data scientists, or anyone wanting deeper intuition."
+  },
+  {
+    "objectID": "pages/blog-en.html",
+    "href": "pages/blog-en.html",
     "title": "blog",
     "section": "",
-    "text": "Tiếng Việt English 日本語\n\n\n日本語で公開されたすべての記事を、最新順に表示しています。\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nフーリエ級数の幾何学的直感\n\n\nサインとコサインの成分を使って波を合成する方法を、画像とアニメーションを交えて直感的に解説します。\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
+    "text": "Tiếng Việt English 日本語\n\n\nAll published posts in English, sorted by newest first.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nWhat is a Vector?\n\n\nA geometric introduction to vectors as arrows, quantities, and points in space.\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2026-06-13-sample-post-en/index.html",
-    "href": "posts/2026-06-13-sample-post-en/index.html",
-    "title": "Mamba-3 Part 2 - Methodological Deep Dive",
+    "objectID": "pages/blog.html",
+    "href": "pages/blog.html",
+    "title": "blog",
     "section": "",
-    "text": "This is a sample post in English to demonstrate multilingual support in Corelab."
+    "text": "Tiếng Việt English 日本語\n\n\nTất cả bài viết đã xuất bản, sắp xếp theo thời gian mới nhất trước.\n\n\n\n\n\n\n\n   \n    \n    \n      Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nVector là gì?\n\n\nGiới thiệu trực quan về vector như mũi tên, đại lượng và điểm trong không gian.\n\n\n\n\n\nJun 13, 2026\n\n1 min\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2026-06-13-sample-post-en/index.html#introduction",
-    "href": "posts/2026-06-13-sample-post-en/index.html#introduction",
-    "title": "Mamba-3 Part 2 - Methodological Deep Dive",
-    "section": "Introduction",
-    "text": "Introduction\nSequence models with linear complexity have gained popularity due to their efficient execution over long contexts. In this post, we discuss Mamba-3’s architectural features."
-  },
-  {
-    "objectID": "posts/2026-06-fourier-series/index.html",
-    "href": "posts/2026-06-fourier-series/index.html",
-    "title": "Chuoi Fourier bang truc giac hinh hoc",
+    "objectID": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-ja/index.html",
+    "href": "posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-ja/index.html",
+    "title": "ベクトルとは？",
     "section": "",
-    "text": "Day la bai mau cho luong cong viec viet blog ve toan."
-  },
-  {
-    "objectID": "posts/2026-06-fourier-series/index.html#y-tuong",
-    "href": "posts/2026-06-fourier-series/index.html#y-tuong",
-    "title": "Chuoi Fourier bang truc giac hinh hoc",
-    "section": "Y tuong",
-    "text": "Y tuong\nTa co the xay dung mot dang song phuc tap bang cach cong cac thanh phan co tan so khac nhau."
-  },
-  {
-    "objectID": "posts/2026-06-fourier-series/index.html#animation",
-    "href": "posts/2026-06-fourier-series/index.html#animation",
-    "title": "Chuoi Fourier bang truc giac hinh hoc",
-    "section": "Animation",
-    "text": "Animation\nKhi co animation render san, co the nhung truc tiep tu assets/animations/rendered/."
+    "text": "ここに本文を書きます。",
+    "crumbs": [
+      "チャプター",
+      "1. ベクトルとは？"
+    ]
   }
 ]

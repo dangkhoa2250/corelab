@@ -1,21 +1,20 @@
 [
   {
-    "listing": "/pages/blog.html",
+    "listing": "/pages/blog-ja.html",
     "items": [
-      "/posts/2026-06-fourier-series/index.html",
-      "/posts/2026-06-transformers-intuition/index.html"
+      "/posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-ja/index.html"
     ]
   },
   {
     "listing": "/pages/blog-en.html",
     "items": [
-      "/posts/2026-06-13-sample-post-en/index.html"
+      "/posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-en/index.html"
     ]
   },
   {
-    "listing": "/pages/blog-ja.html",
+    "listing": "/pages/blog.html",
     "items": [
-      "/posts/2026-06-13-sample-post-ja/index.html"
+      "/posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html"
     ]
   }
 ]

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Vector geometry cover</title>
+  <desc id="desc">A clean coordinate grid with colored vectors.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fbff"/>
+      <stop offset="1" stop-color="#eef6ff"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#cbd8e8" stroke-width="1"/>
+    </pattern>
+    <marker id="arrow-blue" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14Z" fill="#0071e3"/>
+    </marker>
+    <marker id="arrow-green" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0 0L14 7L0 14Z" fill="#10b981"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="720" fill="url(#bg)"/>
+  <rect width="1200" height="720" fill="url(#grid)" opacity="0.72"/>
+  <g transform="translate(190 555)">
+    <path d="M0 0H820" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 0V-420" stroke="#111827" stroke-width="5" stroke-linecap="round"/>
+    <path d="M0 0L470-250" stroke="#0071e3" stroke-width="18" stroke-linecap="round" marker-end="url(#arrow-blue)"/>
+    <path d="M0 0L260-360" stroke="#10b981" stroke-width="14" stroke-linecap="round" marker-end="url(#arrow-green)"/>
+    <circle cx="0" cy="0" r="12" fill="#111827"/>
+    <circle cx="470" cy="-250" r="16" fill="#0071e3"/>
+    <circle cx="260" cy="-360" r="14" fill="#10b981"/>
+  </g>
+  <g fill="#111827" font-family="Inter, Arial, sans-serif">
+    <text x="744" y="178" font-size="52" font-weight="800">Vectors</text>
+    <text x="746" y="236" font-size="30" font-weight="500" fill="#526173">direction + magnitude</text>
+  </g>
+</svg>

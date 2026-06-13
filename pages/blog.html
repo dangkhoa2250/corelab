@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>blog – corelab</title>
+<title>blog – Corelab</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -44,7 +44,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-6388ad00bb6ecaefa25b9a98db1edf18.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-f23b87d0f4880dd50cc732f1f76ab932.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -104,11 +104,9 @@ ul.task-list li input[type="checkbox"] {
 (() => {
   const savedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
-    document.documentElement.setAttribute("data-theme", "dark");
-  } else {
-    document.documentElement.setAttribute("data-theme", "light");
-  }
+  const theme = savedTheme === "dark" || (!savedTheme && prefersDark) ? "dark" : "light";
+  document.documentElement.setAttribute("data-theme", theme);
+  document.documentElement.setAttribute("data-bs-theme", theme);
 })();
 </script>
 
@@ -157,7 +155,7 @@ window.Quarto = {
     <img src="../assets/images/logo.png" alt="" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">corelab</span>
+    <span class="navbar-title">Corelab</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -170,6 +168,17 @@ window.Quarto = {
     <a class="nav-link" href="../index.html"> 
 <span class="menu-text">About</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-course" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Course</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-course">    
+        <li>
+    <a class="dropdown-item" href="../courses/linear-algebra/index.html">
+ <span class="dropdown-text">Linear Algebra</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="../pages/blog.html" aria-current="page"> 
 <span class="menu-text">Blog</span></a>
@@ -244,45 +253,22 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="bWF0aCUyQ3Zpc3VhbGl6YXRpb24=" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781336028880" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="../posts/2026-06-fourier-series/index.html" class="no-external">
+<div class="quarto-post image-right" data-index="0" data-categories="bGluZWFyLWFsZ2VicmE=" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781357983984" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="5">
+<div class="thumbnail"><a href="../posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html" class="no-external">
 
-<img loading="lazy" src="../assets/images/posts/fourier-series/cover.svg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../posts/2026-06-fourier-series/index.html" class="no-external">Chuoi Fourier bang truc giac hinh hoc</a>
-</h3>
-<div class="delink listing-description"><a href="../posts/2026-06-fourier-series/index.html" class="no-external">
-<p>Mo ta cach tong hop song bang cac thanh phan sin va cos, kem image va animation.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../posts/2026-06-fourier-series/index.html" class="no-external">
-<div class="listing-date">
-Jun 13, 2026
-</div>
-<div class="listing-reading-time">1 min</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="YWklMkNkZWVwLWxlYXJuaW5n" data-listing-date-sort="1781276400000" data-listing-file-modified-sort="1781336036734" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
-
-<img loading="lazy" src="../assets/images/posts/transformers-intuition/cover.svg" class="thumbnail-image">
+<img loading="lazy" src="../assets/images/posts/linear-algebra-pt1-what-is-a-vector/cover.svg" class="thumbnail-image">
 
 </a></div>
 <div class="body">
 <h3 class="no-anchor listing-title">
-<a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">Transformer intuition: attention nhin nhu the nao</a>
+<a href="../posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html" class="no-external">Vector là gì?</a>
 </h3>
-<div class="delink listing-description"><a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
-<p>Mot bai mau cho cac chu de AI, tap trung vao trinh bay y tuong va hinh minh hoa.</p>
+<div class="delink listing-description"><a href="../posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html" class="no-external">
+<p>Giới thiệu trực quan về vector như mũi tên, đại lượng và điểm trong không gian.</p>
 </a></div>
 </div>
 <div class="metadata">
-<a href="../posts/2026-06-transformers-intuition/index.html" class="no-external">
+<a href="../posts/2026-06-13-linear-algebra-pt1-what-is-a-vector-vi/index.html" class="no-external">
 <div class="listing-date">
 Jun 13, 2026
 </div>
@@ -351,6 +337,17 @@ Jun 13, 2026
   };
 
   // --- Dark Mode / Theme Toggle Toggler ---
+  const syncThemeIcons = (newTheme) => {
+    const navIcon = document.querySelector('.theme-toggle-btn i');
+    if (navIcon) {
+      navIcon.className = newTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+    }
+    const sidebarIcon = document.querySelector('.sidebar-custom-theme-toggle i');
+    if (sidebarIcon) {
+      sidebarIcon.className = newTheme === "dark" ? "bi bi-sun" : "bi bi-moon-stars";
+    }
+  };
+
   const setupThemeToggle = () => {
     const search = document.querySelector("#quarto-search");
     if (!search) return;
@@ -386,12 +383,556 @@ Jun 13, 2026
       const newTheme = currentTheme === "dark" ? "light" : "dark";
       
       document.documentElement.setAttribute("data-theme", newTheme);
+      document.documentElement.setAttribute("data-bs-theme", newTheme);
       localStorage.setItem("theme", newTheme);
       
-      icon.className = newTheme === "dark" ? "bi bi-sun-fill" : "bi bi-moon-stars-fill";
+      syncThemeIcons(newTheme);
     });
 
     controls.insertBefore(toggleBtn, search);
+  };
+
+  // --- Sidebar Custom Premium Header ---
+  const getCoursePageLang = () => {
+    const path = normalizeSitePath(window.location.pathname);
+    if (/(^|-)vi\/index\.html$/.test(path) || path.endsWith('index-vi.html')) return 'vi';
+    if (/(^|-)ja\/index\.html$/.test(path) || path.endsWith('index-ja.html')) return 'ja';
+    return 'en';
+  };
+
+  const normalizeSitePath = (path) => {
+    let nextPath = path.replace(/^https?:\/\/[^/]+/, '').replace(/^\//, '');
+    if (nextPath.endsWith('/')) nextPath += 'index.html';
+    if (!nextPath.endsWith('.html')) nextPath += '.html';
+    return nextPath;
+  };
+
+  const isCourseAreaPage = () => {
+    const path = normalizeSitePath(window.location.pathname);
+    return path.startsWith('courses/linear-algebra/') ||
+      /^posts\/.*linear-algebra-pt.*-(en|vi|ja)\/index\.html$/.test(path);
+  };
+
+  const localizePath = (path, targetLang) => {
+    const normalized = normalizeSitePath(path);
+    const coursePaths = {
+      en: 'courses/linear-algebra/index.html',
+      vi: 'courses/linear-algebra/index-vi.html',
+      ja: 'courses/linear-algebra/index-ja.html'
+    };
+
+    if (normalized.startsWith('courses/linear-algebra/')) {
+      return coursePaths[targetLang];
+    }
+
+    if (normalized.startsWith('posts/')) {
+      const withoutLang = normalized.replace(/-(en|vi|ja)\/index\.html$/, '');
+      return `${withoutLang}-${targetLang}/index.html`;
+    }
+
+    return coursePaths[targetLang];
+  };
+
+  const setupCoursePageToc = () => {
+    if (!isCourseAreaPage()) return;
+
+    document.body.classList.add('course-layout-page');
+
+    const content = document.querySelector('#quarto-document-content');
+    const margin = document.querySelector('#quarto-margin-sidebar');
+    if (!content || !margin) return;
+
+    let toc = margin.querySelector('#TOC');
+    if (!toc) {
+      toc = document.createElement('nav');
+      toc.id = 'TOC';
+      toc.setAttribute('role', 'doc-toc');
+      margin.appendChild(toc);
+    }
+
+    const lang = getCoursePageLang();
+    const fallbackLabels = {
+      en: { intro: 'Introduction', chapters: 'Chapters' },
+      vi: { intro: 'Giới thiệu', chapters: 'Chương trình' },
+      ja: { intro: '紹介', chapters: 'チャプター' }
+    };
+
+    const ensureId = (element, fallbackId) => {
+      if (!element.id) element.id = fallbackId;
+      return element.id;
+    };
+
+    let items = [...content.querySelectorAll('h1[id]:not(.title), h2[id], h3[id], h1:not(.title), h2, h3')]
+      .filter((heading) => heading.offsetParent !== null)
+      .map((heading, index) => ({
+        id: ensureId(heading, `course-heading-${index + 1}`),
+        text: heading.textContent.trim(),
+        level: heading.tagName.toLowerCase()
+      }))
+      .filter((item) => item.text);
+
+    if (!items.length) {
+      const labels = fallbackLabels[lang] || fallbackLabels.en;
+      const intro = content.querySelector('#course-intro');
+      const listing = content.querySelector('#listing-listing');
+      const title = content.querySelector('h1.title');
+      const currentPath = normalizeSitePath(document.body.dataset.courseCurrentPath || window.location.pathname);
+      const isChapterPage = currentPath.startsWith('posts/');
+      if (title && !title.id) title.id = isChapterPage ? 'chapter-title' : 'course-overview';
+      items = [
+        intro && { id: intro.id, text: labels.intro, level: 'h2' },
+        !intro && title && { id: title.id, text: isChapterPage ? title.textContent.trim() : labels.intro, level: 'h2' },
+        listing && { id: listing.id, text: labels.chapters, level: 'h2' }
+      ].filter(Boolean);
+    }
+
+    if (!items.length) {
+      toc.hidden = true;
+      return;
+    }
+
+    toc.hidden = false;
+    toc.removeAttribute('style');
+    const title = toc.querySelector('#toc-title') || document.createElement('h2');
+    title.id = 'toc-title';
+    title.textContent = 'On this page';
+    const list = document.createElement('ul');
+    list.innerHTML = items.map((item) => `
+      <li class="${item.level === 'h3' ? 'depth-2' : 'depth-1'}">
+        <a href="#${item.id}" class="nav-link" data-scroll-target="#${item.id}">${item.text}</a>
+      </li>
+    `).join('');
+    toc.replaceChildren(title, list);
+
+    window.__courseTocCleanup?.();
+
+    const links = [...list.querySelectorAll('a')];
+    const targets = items
+      .map((item) => document.getElementById(item.id))
+      .filter(Boolean);
+
+    const setActive = (id) => {
+      links.forEach((link) => {
+        const targetId = decodeURIComponent(link.hash.replace(/^#/, ''));
+        link.classList.toggle('active', targetId === id);
+      });
+    };
+
+    const updateActiveTocLink = () => {
+      if (!targets.length) return;
+
+      const activationLine = Math.min(window.innerHeight * 0.28, 220);
+      let activeTarget = targets[0];
+
+      for (const target of targets) {
+        if (target.getBoundingClientRect().top <= activationLine) {
+          activeTarget = target;
+        }
+      }
+
+      setActive(activeTarget.id);
+    };
+
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        const targetId = decodeURIComponent(link.hash.replace(/^#/, ''));
+        setActive(targetId);
+      });
+    });
+
+    window.addEventListener('scroll', updateActiveTocLink, { passive: true });
+    window.addEventListener('resize', updateActiveTocLink);
+    window.addEventListener('hashchange', updateActiveTocLink);
+    window.__courseTocCleanup = () => {
+      window.removeEventListener('scroll', updateActiveTocLink);
+      window.removeEventListener('resize', updateActiveTocLink);
+      window.removeEventListener('hashchange', updateActiveTocLink);
+    };
+    requestAnimationFrame(updateActiveTocLink);
+  };
+
+  const setupCustomSidebarHeader = () => {
+    if (!isCourseAreaPage()) return;
+
+    const menuContainer = document.querySelector('#quarto-sidebar .sidebar-menu-container');
+    if (!menuContainer) return;
+    if (menuContainer.querySelector('.sidebar-custom-header')) return;
+
+    // Detect page path and language
+    let path = window.location.pathname.replace(/\.html$/, '').replace(/\/$/, '');
+    const dirMatch = path.match(/^(\/courses\/[^\/]+)$/);
+    if (dirMatch) path = dirMatch[1] + '/index';
+
+    const currentLang = getCoursePageLang();
+
+    // Get site offset relative prefix
+    const offset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+
+    // Translation maps
+    const courseTitles = {
+      en: 'Linear Algebra',
+      vi: 'Đại số tuyến tính',
+      ja: '線形代数'
+    };
+
+    const searchPlaceholders = {
+      en: 'Search',
+      vi: 'Tìm kiếm',
+      ja: '検索'
+    };
+
+    const dropdownLabels = {
+      en: { course: 'Linear Algebra' },
+      vi: { course: 'Đại số tuyến tính' },
+      ja: { course: '線形代数' }
+    };
+
+    const coursePaths = {
+      en: 'courses/linear-algebra/index.html',
+      vi: 'courses/linear-algebra/index-vi.html',
+      ja: 'courses/linear-algebra/index-ja.html'
+    };
+
+    document.body.dataset.courseCurrentPath = normalizeSitePath(window.location.pathname);
+
+    const customHeader = document.createElement('div');
+    customHeader.className = 'sidebar-custom-header';
+
+    // 1. Course Dropdown Selector
+    const dropdownWrapper = document.createElement('div');
+    dropdownWrapper.className = 'sidebar-course-dropdown';
+
+    const dropdownBtn = document.createElement('button');
+    dropdownBtn.className = 'sidebar-course-dropdown-btn';
+    
+    const titleText = document.createElement('span');
+    titleText.className = 'dropdown-title-text';
+    titleText.textContent = courseTitles[currentLang];
+
+    const chevron = document.createElement('i');
+    chevron.className = 'bi bi-chevron-down';
+
+    dropdownBtn.appendChild(titleText);
+    dropdownBtn.appendChild(chevron);
+    dropdownWrapper.appendChild(dropdownBtn);
+
+    const dropdownContent = document.createElement('div');
+    dropdownContent.className = 'sidebar-course-dropdown-content';
+
+    const linkCourse = document.createElement('a');
+    linkCourse.href = offset + coursePaths[currentLang];
+    linkCourse.textContent = dropdownLabels[currentLang].course;
+    linkCourse.className = 'active';
+
+    dropdownContent.appendChild(linkCourse);
+    dropdownWrapper.appendChild(dropdownContent);
+
+    // Toggle dropdown
+    dropdownBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dropdownWrapper.classList.toggle('show');
+    });
+
+    // Close on click outside
+    document.addEventListener('click', () => {
+      dropdownWrapper.classList.remove('show');
+    });
+
+    // 2. Search box trigger
+    const searchTrigger = document.createElement('div');
+    searchTrigger.className = 'sidebar-custom-search';
+    
+    const searchIcon = document.createElement('i');
+    searchIcon.className = 'bi bi-search';
+
+    const searchPlaceholder = document.createElement('span');
+    searchPlaceholder.className = 'sidebar-search-placeholder';
+    searchPlaceholder.textContent = searchPlaceholders[currentLang];
+
+    const searchShortcut = document.createElement('span');
+    searchShortcut.className = 'sidebar-search-badge';
+    searchShortcut.textContent = '⌘K';
+
+    searchTrigger.appendChild(searchIcon);
+    searchTrigger.appendChild(searchPlaceholder);
+    searchTrigger.appendChild(searchShortcut);
+
+    searchTrigger.addEventListener('click', () => {
+      openSearch();
+    });
+
+    // 3. Language Selector
+    const langSelectWrapper = document.createElement('div');
+    langSelectWrapper.className = 'sidebar-custom-lang';
+    
+    const langSelect = document.createElement('select');
+    langSelect.className = 'sidebar-custom-lang-select';
+
+    const langOptions = {
+      en: { label: 'EN' },
+      vi: { label: 'VI' },
+      ja: { label: 'JA' }
+    };
+
+    for (const [code, { label }] of Object.entries(langOptions)) {
+      const opt = document.createElement('option');
+      opt.value = code;
+      opt.textContent = label;
+      if (code === currentLang) opt.selected = true;
+      langSelect.appendChild(opt);
+    }
+    langSelect.addEventListener('change', (e) => {
+      const currentPath = document.body.dataset.courseCurrentPath || window.location.pathname;
+      window.location.href = offset + localizePath(currentPath, e.target.value);
+    });
+    langSelectWrapper.appendChild(langSelect);
+
+    // Assembly
+    const divider = document.createElement('div');
+    divider.className = 'sidebar-custom-divider';
+
+    customHeader.appendChild(dropdownWrapper);
+    customHeader.appendChild(searchTrigger);
+    customHeader.appendChild(langSelectWrapper);
+    customHeader.appendChild(divider);
+
+    // Prepend to menuContainer
+    menuContainer.insertBefore(customHeader, menuContainer.firstChild);
+
+    // Highlight active link based on current pathname
+    const allLinks = menuContainer.querySelectorAll('a.sidebar-link');
+    allLinks.forEach(link => {
+      link.classList.remove('course-active');
+      link.closest('.sidebar-item')?.classList.remove('course-active');
+      let href = link.getAttribute('href');
+      if (!href) return;
+      // Resolve href to absolute-like path
+      const a = document.createElement('a');
+      a.href = href;
+      const currentPath = normalizeSitePath(window.location.pathname);
+      const isCourseOverview = currentPath === 'courses/linear-algebra/index.html' ||
+        currentPath === 'courses/linear-algebra/index-vi.html' ||
+        currentPath === 'courses/linear-algebra/index-ja.html';
+      const isOverviewLink = a.hash === '#course-overview';
+      const isCurrentPageLink = normalizeSitePath(a.pathname) === currentPath && !isOverviewLink;
+      if ((isCourseOverview && isOverviewLink) || isCurrentPageLink) {
+        link.closest('.sidebar-item')?.classList.add('course-active');
+        link.classList.add('course-active');
+      }
+    });
+  };
+
+  const setupCourseBreadcrumbs = () => {
+    if (!isCourseAreaPage()) return;
+
+    const lang = getCoursePageLang();
+    const coursePaths = {
+      en: 'courses/linear-algebra/index.html',
+      vi: 'courses/linear-algebra/index-vi.html',
+      ja: 'courses/linear-algebra/index-ja.html'
+    };
+    const sectionLabels = {
+      en: 'Chapters',
+      vi: 'Chương trình',
+      ja: 'チャプター'
+    };
+    const offset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+    const courseHref = offset + coursePaths[lang] + '#course-chapters';
+
+    document.querySelectorAll('.quarto-page-breadcrumbs .breadcrumb-item a').forEach((link) => {
+      const text = link.textContent.trim();
+      if (text === sectionLabels[lang] || text === 'Chapters' || text === 'Chương trình' || text === 'チャプター') {
+        link.href = courseHref;
+      }
+    });
+  };
+
+  const setupCourseChapterPager = () => {
+    if (!isCourseAreaPage()) return;
+
+    const content = document.querySelector('#quarto-document-content');
+    const sidebar = document.querySelector('#quarto-sidebar');
+    if (!content || !sidebar) return;
+
+    content.querySelector('.course-chapter-pager')?.remove();
+
+    const currentPath = normalizeSitePath(document.body.dataset.courseCurrentPath || window.location.pathname);
+    const coursePaths = {
+      en: 'courses/linear-algebra/index.html',
+      vi: 'courses/linear-algebra/index-vi.html',
+      ja: 'courses/linear-algebra/index-ja.html'
+    };
+    const isOverviewPage = Object.values(coursePaths).includes(currentPath);
+    const isChapterPage = currentPath.startsWith('posts/');
+    if (!isOverviewPage && !isChapterPage) return;
+
+    const chapters = [...sidebar.querySelectorAll('.sidebar-section .sidebar-item')]
+      .map((item) => {
+        const link = item.querySelector('a.sidebar-link[href]');
+        const text = (link || item.querySelector('.menu-text'))?.textContent.trim();
+        if (!text || !/^\d+\./.test(text)) return null;
+
+        let href = link?.getAttribute('href') || '';
+        if (href) {
+          const a = document.createElement('a');
+          a.href = href;
+          href = a.href;
+        }
+
+        return { text, href, path: href ? normalizeSitePath(new URL(href).pathname) : '' };
+      })
+      .filter(Boolean);
+
+    const lang = getCoursePageLang();
+    const labels = {
+      en: { previous: 'Previous chapter', next: 'Next chapter', start: 'Start course', overview: 'About this course' },
+      vi: { previous: 'Bài trước', next: 'Bài tiếp theo', start: 'Bắt đầu khóa học', overview: 'Giới thiệu' },
+      ja: { previous: '前のチャプター', next: '次のチャプター', start: 'コースを開始', overview: 'このコースについて' }
+    }[lang] || { previous: 'Previous chapter', next: 'Next chapter', start: 'Start course', overview: 'About this course' };
+
+    // Prepend the Overview page to chapters list so Chapter 1 can navigate back to it
+    const offset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+    chapters.unshift({
+      text: labels.overview,
+      href: offset + coursePaths[lang],
+      path: coursePaths[lang]
+    });
+
+    const renderItem = (chapter, direction, label) => {
+      if (!chapter) return '<span class="course-pager-spacer" aria-hidden="true"></span>';
+
+      const body = `
+        <span class="course-pager-label">${label}</span>
+        <span class="course-pager-title">${chapter.text}</span>
+      `;
+
+      if (!chapter.href) {
+        return `<span class="course-pager-item ${direction} disabled" aria-disabled="true">${body}</span>`;
+      }
+
+      return `<a class="course-pager-item ${direction}" href="${chapter.href}">${body}</a>`;
+    };
+
+    const pager = document.createElement('nav');
+    pager.className = 'course-chapter-pager';
+    pager.setAttribute('aria-label', 'Chapter navigation');
+
+    if (isOverviewPage) {
+      pager.innerHTML = [
+        '<span class="course-pager-spacer" aria-hidden="true"></span>',
+        renderItem(chapters[1], 'next', labels.start)
+      ].join('');
+    } else {
+      const currentIndex = chapters.findIndex((chapter) => chapter.path === currentPath);
+      if (currentIndex === -1) return;
+      pager.innerHTML = [
+        renderItem(chapters[currentIndex - 1], 'previous', labels.previous),
+        renderItem(chapters[currentIndex + 1], 'next', labels.next)
+      ].join('');
+    }
+
+    content.appendChild(pager);
+  };
+
+  // --- Sidebar Chapter Navigation (SPA-style) ---
+  const setupSidebarChapterNav = () => {
+    const sidebar = document.querySelector('#quarto-sidebar');
+    if (!sidebar) return;
+    if (sidebar.dataset.chapterNavBound === 'true') {
+      setupCoursePageToc();
+      return;
+    }
+    sidebar.dataset.chapterNavBound = 'true';
+
+    const links = sidebar.querySelectorAll('.sidebar-section a.sidebar-link[href]');
+    if (!links.length) return;
+
+    const content = document.querySelector('#quarto-document-content');
+    if (!content) return;
+
+    let savedHtml = null;
+
+    const showOverview = (e) => {
+      if (e) e.preventDefault();
+      document.body.dataset.courseCurrentPath = localizePath(window.location.pathname, getCoursePageLang());
+      if (savedHtml) {
+        content.innerHTML = savedHtml;
+        savedHtml = null;
+        links.forEach(l => {
+          l.closest('.sidebar-item')?.classList.remove('course-active');
+          l.classList.remove('course-active');
+        });
+        const overviewLink = [...links].find(l => {
+          const a = document.createElement('a');
+          a.href = l.getAttribute('href') || '';
+          return a.hash === '#course-overview';
+        });
+        overviewLink?.closest('.sidebar-item')?.classList.add('course-active');
+        overviewLink?.classList.add('course-active');
+        setupCoursePageToc();
+      }
+      const intro = document.querySelector('#course-intro');
+      if (intro) intro.scrollIntoView({ behavior: 'smooth' });
+    };
+
+    const loadChapter = async (e) => {
+      const link = e.currentTarget;
+      let href = link.getAttribute('href');
+      if (!href) return;
+      e.preventDefault();
+
+      // Handle intro links (href could be #intro or ../../#intro after resolution)
+      const aEl = document.createElement('a');
+      aEl.href = href;
+      if (aEl.hash === '#course-overview') {
+        if (normalizeSitePath(window.location.pathname).startsWith('posts/')) {
+          const offset = document.querySelector('meta[name="quarto:offset"]')?.getAttribute('content') || '';
+          const coursePaths = {
+            en: 'courses/linear-algebra/index.html',
+            vi: 'courses/linear-algebra/index-vi.html',
+            ja: 'courses/linear-algebra/index-ja.html'
+          };
+          window.location.href = offset + coursePaths[getCoursePageLang()] + '#course-overview';
+          return;
+        }
+        showOverview();
+        return;
+      }
+
+      // Normalize URL: replace .qmd → .html, fix protocol-relative //
+      href = href.replace(/\.qmd$/, '.html').replace(/^\/\//, '/');
+      const a = document.createElement('a');
+      a.href = href;
+      href = a.href;
+      document.body.dataset.courseCurrentPath = normalizeSitePath(a.pathname);
+
+      links.forEach(l => {
+        l.closest('.sidebar-item')?.classList.remove('course-active');
+        l.classList.remove('course-active');
+      });
+      link.closest('.sidebar-item')?.classList.add('course-active');
+      link.classList.add('course-active');
+
+      if (!savedHtml) savedHtml = content.innerHTML;
+      content.innerHTML = '<p class="course-loading">Loading…</p>';
+
+      try {
+        const res = await fetch(href);
+        const html = await res.text();
+        const doc = new DOMParser().parseFromString(html, 'text/html');
+        const newContent = doc.querySelector('#quarto-document-content');
+        if (newContent) {
+          content.innerHTML = newContent.innerHTML;
+          setupCoursePageToc();
+          setupCourseChapterPager();
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      } catch {
+        content.innerHTML = '<p style="color:red">Failed to load chapter.</p>';
+      }
+    };
+
+    links.forEach(link => link.addEventListener('click', loadChapter));
   };
 
   // --- Initializers ---
@@ -399,6 +940,11 @@ Jun 13, 2026
     addShortcutLabel();
     bindSearchContainer();
     setupThemeToggle();
+    setupCustomSidebarHeader();
+    setupCoursePageToc();
+    setupCourseBreadcrumbs();
+    setupCourseChapterPager();
+    setupSidebarChapterNav();
 
     const search = document.querySelector("#quarto-search");
     if (!search) return;
@@ -410,10 +956,14 @@ Jun 13, 2026
     observer.observe(search, { childList: true, subtree: true });
   });
 
-  // Run immediately in case script is loaded deferred or DOM is already ready
   addShortcutLabel();
   bindSearchContainer();
   setupThemeToggle();
+  setupCustomSidebarHeader();
+  setupCoursePageToc();
+  setupCourseBreadcrumbs();
+  setupCourseChapterPager();
+  setupSidebarChapterNav();
 })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
