@@ -52,7 +52,7 @@ html[data-theme="dark"] {
 body,
 .navbar,
 .feature-card,
-.quarto-listing-container-default .listing-item,
+.quarto-listing-container-default .quarto-post,
 pre,
 .sourceCode,
 blockquote,
@@ -471,7 +471,7 @@ th {
   gap: 0;
 }
 
-.quarto-listing-container-default .listing-item {
+.quarto-listing-container-default .quarto-post {
   padding: 2.2rem 0;
   border-top: none !important;
   border-left: none !important;
@@ -491,13 +491,13 @@ th {
   gap: 0.4rem 2rem;
 }
 
-.quarto-listing-container-default .listing-item:hover {
+.quarto-listing-container-default .quarto-post:hover {
   transform: none !important;
   box-shadow: none !important;
   opacity: 0.85;
 }
 
-.quarto-listing-container-default .listing-item .thumbnail {
+.quarto-listing-container-default .quarto-post .thumbnail {
   grid-area: thumbnail;
   align-self: center;
   margin: 0 !important;
@@ -505,7 +505,7 @@ th {
   justify-content: flex-end;
 }
 
-.quarto-listing-container-default .listing-item .thumbnail img {
+.quarto-listing-container-default .quarto-post .thumbnail img {
   width: 180px;
   height: 110px;
   object-fit: cover;
@@ -514,11 +514,11 @@ th {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-.quarto-listing-container-default .listing-item .body {
+.quarto-listing-container-default .quarto-post .body {
   display: contents;
 }
 
-.quarto-listing-container-default .listing-item .listing-title {
+.quarto-listing-container-default .quarto-post .listing-title {
   grid-area: title;
   margin: 0;
   font-size: 1.65rem;
@@ -526,23 +526,23 @@ th {
   line-height: 1.3;
 }
 
-.quarto-listing-container-default .listing-item .listing-title a {
+.quarto-listing-container-default .quarto-post .listing-title a {
   color: var(--corelab-ink) !important;
   text-decoration: none !important;
 }
 
-.quarto-listing-container-default .listing-item .listing-title a:hover {
+.quarto-listing-container-default .quarto-post .listing-title a:hover {
   color: var(--corelab-accent) !important;
 }
 
-.quarto-listing-container-default .listing-item .metadata {
+.quarto-listing-container-default .quarto-post .metadata {
   grid-area: metadata;
   margin: 0;
   display: flex;
   align-items: center;
 }
 
-.quarto-listing-container-default .listing-item .metadata a {
+.quarto-listing-container-default .quarto-post .metadata a {
   display: inline-flex;
   align-items: center;
   color: var(--corelab-muted) !important;
@@ -551,27 +551,27 @@ th {
   font-weight: 500;
 }
 
-.quarto-listing-container-default .listing-item .metadata .listing-date {
+.quarto-listing-container-default .quarto-post .metadata .listing-date {
   display: inline;
 }
 
-.quarto-listing-container-default .listing-item .metadata .listing-date::before {
+.quarto-listing-container-default .quarto-post .metadata .listing-date::before {
   content: "📅 ";
   margin-right: 0.25rem;
 }
 
-.quarto-listing-container-default .listing-item .metadata .listing-reading-time {
+.quarto-listing-container-default .quarto-post .metadata .listing-reading-time {
   display: inline;
 }
 
-.quarto-listing-container-default .listing-item .metadata .listing-reading-time::before {
+.quarto-listing-container-default .quarto-post .metadata .listing-reading-time::before {
   content: "·";
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   font-weight: bold;
 }
 
-.quarto-listing-container-default .listing-item .listing-description {
+.quarto-listing-container-default .quarto-post .listing-description {
   grid-area: description;
   margin: 0;
   font-size: 1rem;
@@ -579,7 +579,7 @@ th {
   line-height: 1.5;
 }
 
-.quarto-listing-container-default .listing-item .listing-categories {
+.quarto-listing-container-default .quarto-post .listing-categories {
   grid-area: categories;
   margin-top: 0.25rem;
   display: flex;
@@ -588,7 +588,7 @@ th {
 }
 
 @media (max-width: 600px) {
-  .quarto-listing-container-default .listing-item {
+  .quarto-listing-container-default .quarto-post {
     grid-template-areas: 
       "title"
       "metadata"
@@ -599,11 +599,11 @@ th {
     gap: 0.5rem 0;
     padding: 1.5rem 0;
   }
-  .quarto-listing-container-default .listing-item .thumbnail {
+  .quarto-listing-container-default .quarto-post .thumbnail {
     justify-content: flex-start;
     margin: 0.5rem 0 !important;
   }
-  .quarto-listing-container-default .listing-item .thumbnail img {
+  .quarto-listing-container-default .quarto-post .thumbnail img {
     width: 100%;
     height: 160px;
   }
