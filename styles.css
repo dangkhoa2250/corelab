@@ -522,7 +522,7 @@ th {
   grid-area: title;
   margin: 0;
   font-size: 1.65rem;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 1.3;
 }
 
@@ -549,6 +549,7 @@ th {
   text-decoration: none !important;
   font-size: 0.92rem;
   font-weight: 500;
+  opacity: 0.9;
 }
 
 .quarto-listing-container-default .quarto-post .metadata .listing-date {
@@ -575,7 +576,8 @@ th {
   grid-area: description;
   margin: 0;
   font-size: 1rem;
-  color: var(--corelab-muted);
+  color: var(--corelab-ink);
+  opacity: 0.8;
   line-height: 1.5;
 }
 
