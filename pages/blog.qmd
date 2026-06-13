@@ -3,8 +3,12 @@ title: "blog"
 listing:
   contents: "../posts/**/index.qmd"
   sort: "date desc"
-  type: table
-  fields: [date, title, categories, description]
+  type: default
+  categories: false
+  sort-ui: true
+  filter-ui: true
+  fields: [date, title, reading-time, description, image]
+  image-align: right
 ---
 
 :::{.page-intro}
