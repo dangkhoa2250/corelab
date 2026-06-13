@@ -21,34 +21,6 @@
     "text": "Media workflow\nNeu bai viet co animation, source nam trong src/manim/posts/transformers-intuition/, con file da render nam trong assets/animations/rendered/."
   },
   {
-    "objectID": "pages/topics.html",
-    "href": "pages/topics.html",
-    "title": "Topics",
-    "section": "",
-    "text": "Hai cum noi dung chinh cua blog la toan va AI, voi nhan manh vao cac bai viet giai thich bang truc giac."
-  },
-  {
-    "objectID": "pages/topics.html#toan",
-    "href": "pages/topics.html#toan",
-    "title": "Topics",
-    "section": "Toan",
-    "text": "Toan\n\nPhan tich\nDai so tuyen tinh\nXac suat\nToan cho machine learning"
-  },
-  {
-    "objectID": "pages/topics.html#ai",
-    "href": "pages/topics.html#ai",
-    "title": "Topics",
-    "section": "AI",
-    "text": "AI\n\nNeural networks\nOptimization\nRepresentation learning\nTruc quan hoa mo hinh"
-  },
-  {
-    "objectID": "pages/topics.html#media",
-    "href": "pages/topics.html#media",
-    "title": "Topics",
-    "section": "Media",
-    "text": "Media\n\nHinh minh hoa\nAnimation bang Manim\nDo thi va diagram\nGhi chu ky thuat"
-  },
-  {
     "objectID": "pages/blog.html",
     "href": "pages/blog.html",
     "title": "blog",
@@ -89,20 +61,6 @@
     "title": "corelab",
     "section": "",
     "text": "Machine learning and systems, with a focus on efficient training and inference:\n\nHardware-aware algorithms.\nSequence models with long-range memory."
-  },
-  {
-    "objectID": "pages/projects.html",
-    "href": "pages/projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "Trang nay danh cho cac series, note dai ky, hoac project lon lien quan den toan va AI."
-  },
-  {
-    "objectID": "pages/projects.html#se-xuat-hien-o-day",
-    "href": "pages/projects.html#se-xuat-hien-o-day",
-    "title": "Projects",
-    "section": "Se xuat hien o day",
-    "text": "Se xuat hien o day\n\nseries bai viet co chung mot chu de\nproject note keo dai nhieu bai\ntong hop media, visualization, va experiment da publish"
   },
   {
     "objectID": "posts/2026-06-fourier-series/index.html",
